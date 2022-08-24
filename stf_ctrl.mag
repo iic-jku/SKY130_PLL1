@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661063281
+<< metal1 >>
+rect 1540 1436 1582 1528
+rect 1540 -612 1582 -520
+rect 1720 -2712 1754 -2340
+rect 2139 -3054 2181 -2568
+rect 2548 -2904 2582 -2244
+<< metal2 >>
+rect 1801 -2664 1843 -2388
+rect 2468 -2856 2510 -2292
+use tgate_1  tgate_1_0
+timestamp 1660934390
+transform 1 0 1801 0 1 2480
+box -261 -952 919 1138
+use tgate_1  tgate_1_1
+timestamp 1660934390
+transform 1 0 1801 0 1 432
+box -261 -952 919 1138
+use tgate_1  tgate_1_2
+timestamp 1660934390
+transform 1 0 1801 0 1 -1616
+box -261 -952 919 1138
+use vc_1  vc_1_0
+timestamp 1660924909
+transform 0 -1 2107 1 0 -3575
+box -53 -613 1049 525
+<< end >>

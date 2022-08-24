@@ -1,0 +1,204 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1660928070
+<< nwell >>
+rect -359 -289 359 289
+<< pmos >>
+rect -159 -70 -129 70
+rect -63 -70 -33 70
+rect 33 -70 63 70
+rect 129 -70 159 70
+<< pdiff >>
+rect -221 58 -159 70
+rect -221 -58 -209 58
+rect -175 -58 -159 58
+rect -221 -70 -159 -58
+rect -129 58 -63 70
+rect -129 -58 -113 58
+rect -79 -58 -63 58
+rect -129 -70 -63 -58
+rect -33 58 33 70
+rect -33 -58 -17 58
+rect 17 -58 33 58
+rect -33 -70 33 -58
+rect 63 58 129 70
+rect 63 -58 79 58
+rect 113 -58 129 58
+rect 63 -70 129 -58
+rect 159 58 221 70
+rect 159 -58 175 58
+rect 209 -58 221 58
+rect 159 -70 221 -58
+<< pdiffc >>
+rect -209 -58 -175 58
+rect -113 -58 -79 58
+rect -17 -58 17 58
+rect 79 -58 113 58
+rect 175 -58 209 58
+<< nsubdiff >>
+rect -323 219 -227 253
+rect 227 219 323 253
+rect -323 157 -289 219
+rect 289 157 323 219
+rect -323 -219 -289 -157
+rect 289 -219 323 -157
+rect -323 -253 -227 -219
+rect 227 -253 323 -219
+<< nsubdiffcont >>
+rect -227 219 227 253
+rect -323 -157 -289 157
+rect 289 -157 323 157
+rect -227 -253 227 -219
+<< poly >>
+rect -81 151 81 167
+rect -81 117 -65 151
+rect -31 117 31 151
+rect 65 117 81 151
+rect -81 101 81 117
+rect -159 70 -129 96
+rect -63 70 -33 101
+rect 33 70 63 101
+rect 129 70 159 96
+rect -159 -101 -129 -70
+rect -63 -96 -33 -70
+rect 33 -96 63 -70
+rect 129 -101 159 -70
+rect -177 -117 -111 -101
+rect -177 -151 -161 -117
+rect -127 -151 -111 -117
+rect -177 -167 -111 -151
+rect 111 -117 177 -101
+rect 111 -151 127 -117
+rect 161 -151 177 -117
+rect 111 -167 177 -151
+<< polycont >>
+rect -65 117 -31 151
+rect 31 117 65 151
+rect -161 -151 -127 -117
+rect 127 -151 161 -117
+<< locali >>
+rect -323 219 -227 253
+rect 227 219 323 253
+rect -323 157 -289 219
+rect 289 157 323 219
+rect -81 117 -65 151
+rect -31 117 31 151
+rect 65 117 81 151
+rect -209 58 -175 74
+rect -209 -74 -175 -58
+rect -113 58 -79 74
+rect -113 -74 -79 -58
+rect -17 58 17 74
+rect -17 -74 17 -58
+rect 79 58 113 74
+rect 79 -74 113 -58
+rect 175 58 209 74
+rect 175 -74 209 -58
+rect -177 -151 -161 -117
+rect -127 -151 -111 -117
+rect 111 -151 127 -117
+rect 161 -151 177 -117
+rect -323 -219 -289 -157
+rect 289 -219 323 -157
+rect -323 -253 -227 -219
+rect 227 -253 323 -219
+<< viali >>
+rect -65 117 -31 151
+rect 31 117 65 151
+rect -209 -58 -175 58
+rect -113 -58 -79 58
+rect -17 -58 17 58
+rect 79 -58 113 58
+rect 175 -58 209 58
+rect -161 -151 -127 -117
+rect 127 -151 161 -117
+<< metal1 >>
+rect -77 151 77 157
+rect -77 117 -65 151
+rect -31 117 31 151
+rect 65 117 77 151
+rect -77 111 77 117
+rect -221 61 -67 70
+rect -221 9 -218 61
+rect -166 9 -122 61
+rect -70 9 -67 61
+rect -221 0 -209 9
+rect -215 -58 -209 0
+rect -175 0 -113 9
+rect -175 -58 -169 0
+rect -215 -70 -169 -58
+rect -119 -58 -113 0
+rect -79 0 -67 9
+rect -23 58 23 70
+rect -23 0 -17 58
+rect -79 -58 -73 0
+rect -119 -70 -73 -58
+rect -29 -9 -17 0
+rect 17 0 23 58
+rect 67 61 221 70
+rect 67 9 70 61
+rect 122 9 166 61
+rect 218 9 221 61
+rect 67 0 79 9
+rect 17 -9 29 0
+rect -29 -61 -26 -9
+rect 26 -61 29 -9
+rect -29 -70 29 -61
+rect 73 -58 79 0
+rect 113 0 175 9
+rect 113 -58 119 0
+rect 73 -70 119 -58
+rect 169 -58 175 0
+rect 209 0 221 9
+rect 209 -58 215 0
+rect 169 -70 215 -58
+rect -173 -117 -115 -111
+rect 115 -117 173 -111
+rect -173 -151 -161 -117
+rect -127 -151 127 -117
+rect 161 -151 173 -117
+rect -173 -157 -115 -151
+rect 115 -157 173 -151
+<< via1 >>
+rect -218 58 -166 61
+rect -218 9 -209 58
+rect -209 9 -175 58
+rect -175 9 -166 58
+rect -122 58 -70 61
+rect -122 9 -113 58
+rect -113 9 -79 58
+rect -79 9 -70 58
+rect 70 58 122 61
+rect 70 9 79 58
+rect 79 9 113 58
+rect 113 9 122 58
+rect 166 58 218 61
+rect 166 9 175 58
+rect 175 9 209 58
+rect 209 9 218 58
+rect -26 -58 -17 -9
+rect -17 -58 17 -9
+rect 17 -58 26 -9
+rect -26 -61 26 -58
+<< metal2 >>
+rect -221 61 221 70
+rect -221 9 -218 61
+rect -166 9 -122 61
+rect -70 28 70 61
+rect -70 9 -67 28
+rect -221 0 -67 9
+rect 67 9 70 28
+rect 122 9 166 61
+rect 218 9 221 61
+rect 67 0 221 9
+rect -29 -9 29 0
+rect -29 -61 -26 -9
+rect 26 -61 29 -9
+rect -29 -70 29 -61
+<< properties >>
+string FIXED_BBOX -306 -236 306 236
+string gencell sky130_fd_pr__pfet_01v8
+string library sky130
+string parameters w 0.7 l 0.15 m 1 nf 4 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

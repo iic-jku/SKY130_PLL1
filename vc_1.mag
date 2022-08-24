@@ -1,0 +1,15 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1660924909
+<< metal1 >>
+rect 475 -185 521 79
+use vc_n  sky130_fd_pr__nfet_01v8_2AA63J_0
+timestamp 1660924909
+transform 1 0 498 0 1 -333
+box -359 -280 359 280
+use vc_p  vc_p_0
+timestamp 1660924145
+transform 1 0 498 0 1 236
+box -551 -289 551 289
+<< end >>
