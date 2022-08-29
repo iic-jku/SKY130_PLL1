@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1661285251
+timestamp 1661759122
 << metal1 >>
 rect 3808 3710 3814 3762
 rect 3866 3710 3872 3762
@@ -68,11 +68,11 @@ rect 6238 3233 6298 3293
 rect 6238 2973 6298 3033
 rect 6238 2713 6298 2773
 rect 6238 2453 6298 2513
-use stf_ctrl  stf_ctrl_0 ma2022
+use stf_ctrl  stf_ctrl_0
 timestamp 1661273666
 transform 0 1 11374 -1 0 7277
 box 1498 -3670 2762 3618
-use vco_core_8  vco_core_8_0 ma2022
+use vco_core_8  vco_core_8_0
 timestamp 1661242302
 transform 1 0 1170 0 1 4482
 box -1170 -4482 6238 2304
