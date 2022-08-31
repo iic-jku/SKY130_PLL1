@@ -1,0 +1,182 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO pin_dummy
+  CLASS BLOCK ;
+  FOREIGN pin_dummy ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 38.440 BY 49.160 ;
+  PIN VGND
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 18.905 32.660 20.505 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 27.975 32.660 29.575 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 13.770 10.640 15.370 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 22.815 10.640 24.415 38.320 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 14.375 32.660 15.975 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 23.440 32.660 25.040 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 32.505 32.660 34.105 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 9.240 10.640 10.840 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 18.290 10.640 19.890 38.320 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 27.335 10.640 28.935 38.320 ;
+    END
+  END VPWR
+  PIN avdd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 34.440 27.240 38.440 27.840 ;
+    END
+  END avdd
+  PIN avss
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 0.000 26.130 4.000 ;
+    END
+  END avss
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.070 45.160 29.350 49.160 ;
+    END
+  END clk
+  PIN cvdd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END cvdd
+  PIN cvss
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END cvss
+  PIN dvdd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 34.440 0.040 38.440 0.640 ;
+    END
+  END dvdd
+  PIN dvss
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 13.640 4.000 14.240 ;
+    END
+  END dvss
+  PIN load
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 45.160 16.470 49.160 ;
+    END
+  END load
+  PIN out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 34.440 40.840 38.440 41.440 ;
+    END
+  END out
+  PIN read
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 0.000 13.250 4.000 ;
+    END
+  END read
+  PIN ref
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 40.840 4.000 41.440 ;
+    END
+  END ref
+  PIN s_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.310 45.160 3.590 49.160 ;
+    END
+  END s_in
+  PIN s_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 34.440 13.640 38.440 14.240 ;
+    END
+  END s_out
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 32.660 38.165 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 32.660 38.320 ;
+      LAYER met2 ;
+        RECT 9.270 10.640 29.810 41.325 ;
+      LAYER met3 ;
+        RECT 9.240 40.440 34.040 41.305 ;
+        RECT 9.240 28.240 34.440 40.440 ;
+        RECT 9.240 26.840 34.040 28.240 ;
+        RECT 9.240 14.640 34.440 26.840 ;
+        RECT 9.240 13.240 34.040 14.640 ;
+        RECT 9.240 10.715 34.440 13.240 ;
+      LAYER met4 ;
+        RECT 15.770 10.640 17.890 38.320 ;
+        RECT 20.290 10.640 22.415 38.320 ;
+  END
+END pin_dummy
+END LIBRARY
+

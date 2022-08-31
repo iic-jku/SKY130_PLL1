@@ -1,0 +1,103 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661955116
+<< obsli1 >>
+rect 1104 2159 6532 7633
+<< obsm1 >>
+rect 1104 2128 6532 7664
+<< metal2 >>
+rect 662 9032 718 9832
+rect 3238 9032 3294 9832
+rect 5814 9032 5870 9832
+rect 18 0 74 800
+rect 2594 0 2650 800
+rect 5170 0 5226 800
+<< obsm2 >>
+rect 1854 2128 5962 8265
+<< metal3 >>
+rect 0 8168 800 8288
+rect 6888 8168 7688 8288
+rect 0 5448 800 5568
+rect 6888 5448 7688 5568
+rect 0 2728 800 2848
+rect 6888 2728 7688 2848
+rect 6888 8 7688 128
+<< obsm3 >>
+rect 1848 8088 6808 8261
+rect 1848 5648 6888 8088
+rect 1848 5368 6808 5648
+rect 1848 2928 6888 5368
+rect 1848 2648 6808 2928
+rect 1848 2143 6888 2648
+<< metal4 >>
+rect 1848 2128 2168 7664
+rect 2754 2128 3074 7664
+rect 3658 2128 3978 7664
+rect 4563 2128 4883 7664
+rect 5467 2128 5787 7664
+<< obsm4 >>
+rect 3154 2128 3578 7664
+rect 4058 2128 4483 7664
+<< metal5 >>
+rect 1104 6501 6532 6821
+rect 1104 5595 6532 5915
+rect 1104 4688 6532 5008
+rect 1104 3781 6532 4101
+rect 1104 2875 6532 3195
+<< labels >>
+rlabel metal5 s 1104 3781 6532 4101 6 VGND
+port 1 nsew ground input
+rlabel metal5 s 1104 5595 6532 5915 6 VGND
+port 1 nsew ground input
+rlabel metal4 s 2754 2128 3074 7664 6 VGND
+port 1 nsew ground input
+rlabel metal4 s 4563 2128 4883 7664 6 VGND
+port 1 nsew ground input
+rlabel metal5 s 1104 2875 6532 3195 6 VPWR
+port 2 nsew power input
+rlabel metal5 s 1104 4688 6532 5008 6 VPWR
+port 2 nsew power input
+rlabel metal5 s 1104 6501 6532 6821 6 VPWR
+port 2 nsew power input
+rlabel metal4 s 1848 2128 2168 7664 6 VPWR
+port 2 nsew power input
+rlabel metal4 s 3658 2128 3978 7664 6 VPWR
+port 2 nsew power input
+rlabel metal4 s 5467 2128 5787 7664 6 VPWR
+port 2 nsew power input
+rlabel metal3 s 6888 5448 7688 5568 6 avdd
+port 3 nsew signal input
+rlabel metal2 s 5170 0 5226 800 6 avss
+port 4 nsew signal input
+rlabel metal2 s 5814 9032 5870 9832 6 clk
+port 5 nsew signal input
+rlabel metal3 s 0 5448 800 5568 6 cvdd
+port 6 nsew signal input
+rlabel metal2 s 18 0 74 800 6 cvss
+port 7 nsew signal input
+rlabel metal3 s 6888 8 7688 128 6 dvdd
+port 8 nsew signal input
+rlabel metal3 s 0 2728 800 2848 6 dvss
+port 9 nsew signal input
+rlabel metal2 s 3238 9032 3294 9832 6 load
+port 10 nsew signal input
+rlabel metal3 s 6888 8168 7688 8288 6 out
+port 11 nsew signal output
+rlabel metal2 s 2594 0 2650 800 6 read
+port 12 nsew signal input
+rlabel metal3 s 0 8168 800 8288 6 ref
+port 13 nsew signal input
+rlabel metal2 s 662 9032 718 9832 6 s_in
+port 14 nsew signal input
+rlabel metal3 s 6888 2728 7688 2848 6 s_out
+port 15 nsew signal output
+<< properties >>
+string FIXED_BBOX 0 0 7688 9832
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 60940
+string GDS_FILE /foss/designs/pin_dummy/runs/RUN_2022.08.31_14.09.41/results/finishing/pin_dummy.magic.gds
+string GDS_START 20962
+<< end >>
+
