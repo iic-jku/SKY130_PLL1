@@ -1,0 +1,7 @@
+Running pin_label_purposes_overlapping_drawing.rb.drc on file=/home/christof/caravel_user_project_analog/gds/user_analog_project_wrapper.gds, topcell=user_analog_project_wrapper, output to /home/christof/caravel_user_project_analog/precheck_results/03_SEP_2022___15_32_23/outputs/reports/klayout_pin_label_purposes_overlapping_drawing_check.xml
+  deep:true tiled:false threads:1
+ERROR: In /home/christof/mpw_precheck/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc: 'source': Cell name user_analog_project_wrapper not found in input layout
+ERROR: 'source': Cell name user_analog_project_wrapper not found in input layout in Executable::execute
+  /home/christof/mpw_precheck/checks/drc_checks/klayout/pin_label_purposes_overlapping_drawing.rb.drc:70:in `execute'
+  :/built-in-macros/drc_interpreters.lym:27:in `instance_eval'
+  :/built-in-macros/drc_interpreters.lym:27:in `execute'

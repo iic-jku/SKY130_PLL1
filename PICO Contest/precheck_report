@@ -1,0 +1,74 @@
+christof@admin:~/caravel_user_project_analog$ make run-precheck
+cd /home/christof/mpw_precheck && \
+sudo docker run -v /home/christof/mpw_precheck:/home/christof/mpw_precheck \
+-v /home/christof/caravel_user_project_analog:/home/christof/caravel_user_project_analog \
+-v /home/christof/pdk:/home/christof/pdk \
+-e INPUT_DIRECTORY=/home/christof/caravel_user_project_analog \
+-e PDK_PATH=/home/christof/pdk/sky130A \
+-e PDK_ROOT=/home/christof/pdk \
+-e PDKPATH=/home/christof/pdk/sky130A \
+-u 1000:1000 \
+efabless/mpw_precheck:latest bash -c "cd /home/christof/mpw_precheck ; python3 mpw_precheck.py --input_directory /home/christof/caravel_user_project_analog --pdk_path /home/christof/pdk/sky130A"
+{{EXTRACTING FILES}} Extracting compressed files in: /home/christof/caravel_user_project_analog
+{{Project Type Info}} analog
+{{Project GDS Info}} user_analog_project_wrapper: 0dc249e37df7c41eee0141d71c7dae56c2957b0a
+{{Tools Info}} KLayout: v0.27.10 | Magic: v8.3.315
+fatal: cannot change to '/home/christof/pdk/open_pdks': No such file or directory
+MPW Precheck failed to get Open PDKs & Skywater PDK versions: Command '['git', '-C', '/home/christof/pdk/open_pdks', 'rev-parse', '--verify', 'HEAD']' returned non-zero exit status 128.
+{{START}} Precheck Started, the full log 'precheck.log' will be located in '/home/christof/caravel_user_project_analog/precheck_results/04_SEP_2022___06_17_34/logs'
+{{PRECHECK SEQUENCE}} Precheck will run the following checks: [License, Makefile, Default, Documentation, Consistency, XOR, Magic DRC, Klayout FEOL, Klayout BEOL, Klayout Offgrid, Klayout Metal Minimum Clear Area Density, Klayout Pin Label Purposes Overlapping Drawing, Klayout ZeroArea]
+{{STEP UPDATE}} Executing Check 1 of 13: License
+An approved LICENSE (Apache-2.0) was found in /home/christof/caravel_user_project_analog.
+{{MAIN LICENSE CHECK PASSED}} An approved LICENSE was found in project root.
+An approved LICENSE (Apache-2.0) was found in /home/christof/caravel_user_project_analog.
+{{SUBMODULES LICENSE CHECK PASSED}} No prohibited LICENSE file(s) was found in project submodules
+{{SPDX COMPLIANCE CHECK PASSED}} Project is compliant with the SPDX Standard
+{{STEP UPDATE}} Executing Check 2 of 13: Makefile
+{{MAKEFILE CHECK PASSED}} Makefile valid.
+{{STEP UPDATE}} Executing Check 3 of 13: Default
+The provided 'README.md' is identical to the default 'README.md'
+{{README DEFAULT CHECK FAILED}} Project 'README.md' was not modified and is identical to the default 'README.md'
+{{CONTENT DEFAULT CHECK PASSED}} Project 'gds' was modified and is not identical to the default 'gds'
+{{STEP UPDATE}} Executing Check 4 of 13: Documentation
+{{DOCUMENTATION CHECK PASSED}} Project documentation is appropriate.
+{{STEP UPDATE}} Executing Check 5 of 13: Consistency
+HIERARCHY CHECK PASSED: Module user_analog_project_wrapper is instantiated in caravan. 
+COMPLEXITY CHECK PASSED: Netlist caravan contains at least 8 instances (68 instances). 
+MODELING CHECK PASSED: Netlist caravan is structural.
+SUBMODULE HOOKS CHECK FAILED: The user power port vccd1 is not connected to the correct power domain in the top level netlist. It is connected to mprj/vccd1 but it should be connected to vccd1_core.
+{{NETLIST CONSISTENCY CHECK FAILED}} caravan netlist failed 1 consistency check(s): ['SUBMODULE HOOKS'].
+PORTS CHECK PASSED: Netlist user_analog_project_wrapper ports match the golden wrapper ports
+COMPLEXITY CHECK PASSED: Netlist user_analog_project_wrapper contains at least 1 instances (11 instances). 
+MODELING CHECK PASSED: Netlist user_analog_project_wrapper is structural.
+LAYOUT CHECK FAILED: The GDS layout for user_analog_project_wrapper doesn't match the provided structural netlist. Mismatching modules are: ['pin_dummy']
+{{NETLIST CONSISTENCY CHECK FAILED}} user_analog_project_wrapper netlist failed 1 consistency check(s): ['LAYOUT'].
+{{CONSISTENCY CHECK FAILED}} The user netlist and the top netlist are not valid.
+{{STEP UPDATE}} Executing Check 6 of 13: XOR
+{{XOR CHECK UPDATE}} Total XOR differences: 0, for more details view /home/christof/caravel_user_project_analog/precheck_results/04_SEP_2022___06_17_34/outputs/user_analog_project_wrapper.xor.gds
+{{XOR CHECK PASSED}} The GDS file has no XOR violations.
+{{STEP UPDATE}} Executing Check 7 of 13: Magic DRC
+Found 0 violations
+0 DRC violations
+{{MAGIC DRC CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{STEP UPDATE}} Executing Check 8 of 13: Klayout FEOL
+No DRC Violations found
+{{Klayout FEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{STEP UPDATE}} Executing Check 9 of 13: Klayout BEOL
+No DRC Violations found
+{{Klayout BEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{STEP UPDATE}} Executing Check 10 of 13: Klayout Offgrid
+No DRC Violations found
+{{Klayout Offgrid CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{STEP UPDATE}} Executing Check 11 of 13: Klayout Metal Minimum Clear Area Density
+No DRC Violations found
+{{Klayout Metal Minimum Clear Area Density CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{STEP UPDATE}} Executing Check 12 of 13: Klayout Pin Label Purposes Overlapping Drawing
+No DRC Violations found
+{{Klayout Pin Label Purposes Overlapping Drawing CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{STEP UPDATE}} Executing Check 13 of 13: Klayout ZeroArea
+No DRC Violations found
+{{Klayout ZeroArea CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+{{FINISH}} Executing Finished, the full log 'precheck.log' can be found in '/home/christof/caravel_user_project_analog/precheck_results/04_SEP_2022___06_17_34/logs'
+{{FAILURE}} 2 Check(s) Failed: ['Default', 'Consistency'] !!!
+make: *** [Makefile:114: run-precheck] Error 2
+christof@admin:~/caravel_user_project_analog$

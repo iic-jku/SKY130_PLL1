@@ -1,0 +1,44 @@
+2022-09-03 15:30:52 - [INFO] - {{EXTRACTING FILES}} Extracting compressed files in: /home/christof/caravel_user_project_analog
+2022-09-03 15:30:52 - [INFO] - {{Project Type Info}} analog
+2022-09-03 15:30:52 - [INFO] - {{Project GDS Info}} user_analog_project_wrapper: 2724ddcda9cc83e3bb0d79b6a32cb0bef39da692
+2022-09-03 15:30:53 - [INFO] - {{Tools Info}} KLayout: v0.27.10 | Magic: v8.3.315
+2022-09-03 15:30:53 - [ERROR] - MPW Precheck failed to get Open PDKs & Skywater PDK versions: Command '['git', '-C', '/home/christof/pdk/open_pdks', 'rev-parse', '--verify', 'HEAD']' returned non-zero exit status 128.
+2022-09-03 15:30:53 - [INFO] - {{START}} Precheck Started, the full log 'precheck.log' will be located in '/home/christof/caravel_user_project_analog/precheck_results/03_SEP_2022___15_30_52/logs'
+2022-09-03 15:30:53 - [INFO] - {{PRECHECK SEQUENCE}} Precheck will run the following checks: [License, Makefile, Default, Documentation, Consistency, XOR, Magic DRC, Klayout FEOL, Klayout BEOL, Klayout Offgrid, Klayout Metal Minimum Clear Area Density, Klayout Pin Label Purposes Overlapping Drawing, Klayout ZeroArea]
+2022-09-03 15:30:53 - [INFO] - {{STEP UPDATE}} Executing Check 1 of 13: License
+2022-09-03 15:30:56 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/christof/caravel_user_project_analog.
+2022-09-03 15:30:56 - [INFO] - {{MAIN LICENSE CHECK PASSED}} An approved LICENSE was found in project root.
+2022-09-03 15:30:59 - [INFO] - An approved LICENSE (Apache-2.0) was found in /home/christof/caravel_user_project_analog.
+2022-09-03 15:30:59 - [INFO] - {{SUBMODULES LICENSE CHECK PASSED}} No prohibited LICENSE file(s) was found in project submodules
+2022-09-03 15:30:59 - [INFO] - {{SPDX COMPLIANCE CHECK PASSED}} Project is compliant with the SPDX Standard
+2022-09-03 15:30:59 - [INFO] - {{STEP UPDATE}} Executing Check 2 of 13: Makefile
+2022-09-03 15:30:59 - [INFO] - {{MAKEFILE CHECK PASSED}} Makefile valid.
+2022-09-03 15:30:59 - [INFO] - {{STEP UPDATE}} Executing Check 3 of 13: Default
+2022-09-03 15:30:59 - [WARNING] - The provided 'README.md' is identical to the default 'README.md'
+2022-09-03 15:30:59 - [WARNING] - {{README DEFAULT CHECK FAILED}} Project 'README.md' was not modified and is identical to the default 'README.md'
+2022-09-03 15:30:59 - [WARNING] - The provided user_analog_project_wrapper_default.gds is identical to the default file user_analog_project_wrapper.gds
+2022-09-03 15:30:59 - [WARNING] - {{CONTENT DEFAULT CHECK FAILED}} Project 'gds' was not modified and is identical to the default 'gds'
+2022-09-03 15:30:59 - [INFO] - {{STEP UPDATE}} Executing Check 4 of 13: Documentation
+2022-09-03 15:30:59 - [INFO] - {{DOCUMENTATION CHECK PASSED}} Project documentation is appropriate.
+2022-09-03 15:30:59 - [INFO] - {{STEP UPDATE}} Executing Check 5 of 13: Consistency
+2022-09-03 15:31:04 - [CRITICAL] - {{PARSING LAYOUT FAILED}} The user_analog_project_wrapper layout fails parsing because: Top module: user_analog_project_wrapper is not found in /home/christof/caravel_user_project_analog/gds/user_analog_project_wrapper.gds.
+2022-09-03 15:31:04 - [WARNING] - {{CONSISTENCY CHECK FAILED}} The user netlist and the top netlist are not valid.
+2022-09-03 15:31:04 - [INFO] - {{STEP UPDATE}} Executing Check 6 of 13: XOR
+2022-09-03 15:31:06 - [ERROR] - Top cell name user_analog_project_wrapper not found.
+2022-09-03 15:31:06 - [WARNING] - {{XOR CHECK FAILED}} The GDS file has non-conforming geometries.
+2022-09-03 15:31:06 - [INFO] - {{STEP UPDATE}} Executing Check 7 of 13: Magic DRC
+2022-09-03 15:31:06 - [INFO] - 0 DRC violations
+2022-09-03 15:31:06 - [INFO] - {{MAGIC DRC CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-09-03 15:31:06 - [INFO] - {{STEP UPDATE}} Executing Check 8 of 13: Klayout FEOL
+2022-09-03 15:31:11 - [INFO] - No DRC Violations found
+2022-09-03 15:31:11 - [INFO] - {{Klayout FEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-09-03 15:31:11 - [INFO] - {{STEP UPDATE}} Executing Check 9 of 13: Klayout BEOL
+2022-09-03 15:31:17 - [INFO] - No DRC Violations found
+2022-09-03 15:31:17 - [INFO] - {{Klayout BEOL CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-09-03 15:31:17 - [INFO] - {{STEP UPDATE}} Executing Check 10 of 13: Klayout Offgrid
+2022-09-03 15:31:21 - [INFO] - No DRC Violations found
+2022-09-03 15:31:21 - [INFO] - {{Klayout Offgrid CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-09-03 15:31:21 - [INFO] - {{STEP UPDATE}} Executing Check 11 of 13: Klayout Metal Minimum Clear Area Density
+2022-09-03 15:31:24 - [INFO] - No DRC Violations found
+2022-09-03 15:31:24 - [INFO] - {{Klayout Metal Minimum Clear Area Density CHECK PASSED}} The GDS file, user_analog_project_wrapper.gds, has no DRC violations.
+2022-09-03 15:31:24 - [INFO] - {{STEP UPDATE}} Executing Check 12 of 13: Klayout Pin Label Purposes Overlapping Drawing
