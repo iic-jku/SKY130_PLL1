@@ -1,0 +1,248 @@
+** sch_path: /foss/designs/ma2022/complete_testbench_2.sch
+**.subckt complete_testbench_2
+x1 avdd vb b a net2 net1 net16 delay_cell_2
+x2 avdd vb net12 net3 b a net15 delay_cell_2
+x3 avdd vb net5 net4 net12 net3 net14 delay_cell_2
+x4 avdd vb net1 net2 net5 net4 net13 delay_cell_2
+V1 avdd avss 1.8
+V2 vb avss 0.6
+V3 avss gnd 0
+V4 vc avss 0.3
+x5 avdd avss __UNCONNECTED_PIN__0 __UNCONNECTED_PIN__1 b a inv_buffer
+x6 avdd avss __UNCONNECTED_PIN__2 __UNCONNECTED_PIN__3 net12 net3 inv_buffer
+x7 avdd avss __UNCONNECTED_PIN__4 __UNCONNECTED_PIN__5 net5 net4 inv_buffer
+x8 avdd avss __UNCONNECTED_PIN__6 __UNCONNECTED_PIN__7 net1 net2 inv_buffer
+V5 tail avss 0
+C1 a avss 10f m=1
+C2 net3 avss 10f m=1
+C3 net4 avss 10f m=1
+C4 net2 avss 10f m=1
+C5 net1 avss 10f m=1
+C6 net5 avss 10f m=1
+C7 net12 avss 10f m=1
+C8 b avss 10f m=1
+V10 bit0 avss 1.8
+V11 bit1 avss 1.8
+V12 bit2 avss 1.8
+V6 avdd tail2 0
+x9 tail2 vctrl avss current_vc1
+x10 vctrl tail2 bit2 ss bit1 tt ff bit0 avss current_tg1
+x11 net16 ss avss tt ff current_tails1
+x12 net15 ss avss tt ff current_tails1
+x13 net14 ss avss tt ff current_tails1
+x14 net13 ss avss tt ff current_tails1
+**** begin user architecture code
+
+.lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red tt
+
+
+
+.control
+set temp=25
+alter v10 1.8
+alter v11 0
+alter v12 1.8
+save a b c d @V3[i] @V6[i] @V5[i]
+tran 0.01n 200n 50n
+*plot @V3[i] @V5[i] @6[i]
+*plot @V5[i]
+*plot @V3[i]
+*plot @v6[i]
+*plot a b c d
+plot a b
+fft a
+plot db(mag(a)) xlimit 0.5g 10g ylimit 0.0 -200
+.endc
+.end
+
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  delay_cell_2.sym # of pins=7
+** sym_path: /foss/designs/ma2022/delay_cell_2.sym
+** sch_path: /foss/designs/ma2022/delay_cell_2.sch
+.subckt delay_cell_2  VDD VB OUT2 OUT1 IN2 IN1 VSS
+*.iopin VDD
+*.iopin VSS
+*.iopin VB
+*.iopin IN1
+*.iopin IN2
+*.iopin OUT2
+*.iopin OUT1
+XM5 OUT1 OUT2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 OUT2 OUT1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT1 OUT1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 OUT1 VB VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM6 OUT2 VB VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+XM7 OUT2 OUT2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 OUT1 IN1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 OUT2 IN2 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ma2022/inv_buffer.sym # of pins=6
+** sym_path: /foss/designs/ma2022/inv_buffer.sym
+** sch_path: /foss/designs/ma2022/inv_buffer.sch
+.subckt inv_buffer  avdd avss out1 out2 in2 in1
+*.iopin in1
+*.iopin in2
+*.iopin out1
+*.iopin out2
+*.iopin avdd
+*.iopin avss
+XM6 net1 in2 avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net2 in1 avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net2 in1 avdd avdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 out1 net2 avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM10 out2 net1 avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+C1 net2 GND 10f m=1
+C2 net1 GND 10f m=1
+XM1 out1 net2 avdd avdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 in2 avdd avdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 out2 net1 avdd avdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ma2022/current_vc1.sym # of pins=3
+** sym_path: /foss/designs/ma2022/current_vc1.sym
+** sch_path: /foss/designs/ma2022/current_vc1.sch
+.subckt current_vc1  avdd vctrl avss
+*.iopin avdd
+*.iopin avss
+*.iopin vctrl
+XM2 vctrl vctrl avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 vctrl vctrl avdd avdd sky130_fd_pr__pfet_01v8 L=0.15 W=3.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ma2022/current_tg1.sym # of pins=9
+** sym_path: /foss/designs/ma2022/current_tg1.sym
+** sch_path: /foss/designs/ma2022/current_tg1.sch
+.subckt current_tg1  vctrl avdd b2 swss b1 swtt swff b0 avss
+*.iopin vctrl
+*.iopin avdd
+*.iopin avss
+*.iopin b0
+*.iopin b1
+*.iopin b2
+*.iopin swss
+*.iopin swtt
+*.iopin swff
+x1 swss b2 avss avdd vctrl t_gate1
+x2 swtt b1 avss avdd vctrl t_gate1
+x3 swff b0 avss avdd vctrl t_gate1
+.ends
+
+
+* expanding   symbol:  ma2022/current_tails1.sym # of pins=5
+** sym_path: /foss/designs/ma2022/current_tails1.sym
+** sch_path: /foss/designs/ma2022/current_tails1.sch
+.subckt current_tails1  in swss avss swtt swff
+*.iopin in
+*.iopin avss
+*.iopin swtt
+*.iopin swff
+*.iopin swss
+XM4 in swff avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=0.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 in swtt avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=2.1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 in swss avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=4.2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  ma2022/t_gate1.sym # of pins=5
+** sym_path: /foss/designs/ma2022/t_gate1.sym
+** sch_path: /foss/designs/ma2022/t_gate1.sch
+.subckt t_gate1  out in avss avdd sw
+*.iopin in
+*.iopin avdd
+*.iopin avss
+*.iopin sw
+*.iopin out
+XM17 in sw out avdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM18 in net1 out avss sky130_fd_pr__nfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x1 avdd sw net1 avss inv_simple1
+.ends
+
+
+* expanding   symbol:  ma2022/inv_simple1.sym # of pins=4
+** sym_path: /foss/designs/ma2022/inv_simple1.sym
+** sch_path: /foss/designs/ma2022/inv_simple1.sch
+.subckt inv_simple1  avdd in out avss
+*.iopin in
+*.iopin avdd
+*.iopin avss
+*.iopin out
+XM19 out in avss avss sky130_fd_pr__nfet_01v8 L=0.15 W=1.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM20 out in avdd avdd sky130_fd_pr__pfet_01v8 L=0.15 W=2.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL gnd
+.GLOBAL avss
+.GLOBAL vb
+.GLOBAL avdd
+.GLOBAL vc
+.GLOBAL tail
+.GLOBAL bit0
+.GLOBAL bit1
+.GLOBAL bit2
+.GLOBAL tail2
+.GLOBAL vctrl
+.GLOBAL ss
+.GLOBAL tt
+.GLOBAL ff
+.GLOBAL GND
+.end

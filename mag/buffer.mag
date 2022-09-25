@@ -1,0 +1,35 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1663432000
+<< metal1 >>
+rect 724 966 1096 1000
+rect 766 779 848 819
+rect 814 172 848 779
+rect 980 688 1014 966
+rect 971 682 1023 688
+rect 971 624 1023 630
+rect 878 534 884 586
+rect 936 534 942 586
+rect 628 138 1288 172
+<< via1 >>
+rect 971 630 1023 682
+rect 884 534 936 586
+<< metal2 >>
+rect 772 859 1049 919
+rect 965 630 971 682
+rect 1023 630 1029 682
+rect 884 586 936 592
+rect 878 539 884 581
+rect 884 528 936 534
+rect 980 270 1014 630
+rect 676 210 1240 270
+use simple2_inv  simple2_inv_0 /foss/designs/ma2022
+timestamp 1661797765
+transform 1 0 952 0 1 613
+box -42 -613 1252 525
+use simple_inv  simple_inv_0 /foss/designs/ma2022
+timestamp 1660926584
+transform 1 0 53 0 1 613
+box -53 -613 857 525
+<< end >>
