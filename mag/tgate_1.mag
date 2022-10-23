@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1660934390
+timestamp 1666523630
 << metal1 >>
 rect -261 962 282 1004
 rect -261 -910 -219 962
@@ -38,12 +38,12 @@ rect 435 -119 487 -113
 rect 675 -234 709 -104
 rect 667 -718 709 -676
 rect 0 -814 42 -772
-use simple_inv  simple_inv_0 /foss/designs/ma2022
-timestamp 1660926584
+use simple_inv  simple_inv_0
+timestamp 1666523630
 transform 0 -1 306 1 0 -857
 box -53 -613 857 525
-use tg_1  tg_1_0 /foss/designs/ma2022
-timestamp 1660928070
+use tg_1  tg_1_0
+timestamp 1666523630
 transform 1 0 53 0 1 613
 box -53 -613 665 525
 << end >>
