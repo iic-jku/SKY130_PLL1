@@ -1,29 +1,21 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1666523630
+timestamp 1668153059
+<< locali >>
+rect -35 596 70 631
+rect -35 -70 0 596
+rect 647 -133 682 70
 << metal1 >>
 rect -261 962 282 1004
 rect -261 -910 -219 962
-rect -81 698 186 732
-rect -81 -70 -47 698
-rect 530 388 781 422
 rect 282 178 436 182
 rect 282 126 289 178
 rect 429 126 436 178
 rect 282 122 436 126
-rect 429 -70 435 -61
-rect -81 -104 435 -70
-rect -81 -186 -47 -104
-rect 429 -113 435 -104
-rect 487 -113 493 -61
-rect 747 -150 781 388
-rect 140 -184 781 -150
-rect 747 -282 781 -184
 rect -261 -952 380 -910
 << via1 >>
 rect 289 126 429 178
-rect 435 -113 487 -61
 << metal2 >>
 rect -261 539 0 581
 rect 717 539 919 581
@@ -31,19 +23,28 @@ rect 282 178 436 182
 rect 282 126 289 178
 rect 429 126 436 178
 rect 282 122 436 126
-rect 338 0 380 122
-rect 435 -61 487 -55
-rect 487 -104 709 -70
-rect 435 -119 487 -113
-rect 675 -234 709 -104
+rect 338 -1 380 122
+rect 0 -772 70 -618
+rect 639 -676 709 -522
 rect 667 -718 709 -676
 rect 0 -814 42 -772
-use simple_inv  simple_inv_0
-timestamp 1666523630
-transform 0 -1 306 1 0 -857
-box -53 -613 857 525
+use inv_simple1  inv_simple1_0
+timestamp 1668153059
+transform 0 -1 306 1 0 -858
+box -53 -613 858 525
 use tg_1  tg_1_0
-timestamp 1666523630
+timestamp 1668153059
 transform 1 0 53 0 1 613
 box -53 -613 665 525
+<< labels >>
+rlabel metal1 -261 962 -219 1004 0 sw
+port 1 n
+rlabel metal2 0 -772 70 -618 0 vdd
+port 2 n
+rlabel metal2 639 -676 709 -522 1 vss
+port 3 n
+rlabel metal2 877 539 919 581 0 sw_out
+port 4 n
+rlabel metal2 -219 539 -177 581 0 sw_in
+port 5 n
 << end >>

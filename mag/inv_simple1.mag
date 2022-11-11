@@ -1,0 +1,37 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1668153059
+<< locali >>
+rect 97 306 131 455
+rect 673 306 707 455
+rect 193 -543 227 -403
+rect 577 -543 611 -403
+<< metal1 >>
+rect 381 -32 423 79
+rect -53 -74 423 -32
+rect 381 -185 423 -74
+<< metal2 >>
+rect 85 236 239 306
+rect 381 -32 423 166
+rect 381 -74 857 -32
+rect 381 -263 423 -74
+rect 181 -403 335 -333
+use sinv_n  sinv_n_0
+timestamp 1668153059
+transform 1 0 402 0 1 -333
+box -359 -280 359 280
+use sinv_p  sinv_p_0
+timestamp 1668153059
+transform 1 0 403 0 1 236
+box -455 -289 455 289
+<< labels >>
+rlabel metal1 -53 -74 -11 -32 0 in
+port 1 n
+rlabel metal2 815 -74 857 -32 6 out
+port 5 n
+rlabel metal2 85 236 239 306 1 vdd
+port 6 n
+rlabel metal2 181 -403 335 -333 0 vss
+port 4 n
+<< end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1666170955
+timestamp 1668153059
 << xpolycontact >>
 rect 113 4881 683 5313
 rect 13201 4881 13771 5313
@@ -213,11 +213,11 @@ rect 2303 161 3401 558
 rect 3939 161 3955 558
 rect 1749 143 3955 161
 use sky130_fd_pr__res_high_po_2p85_DZGNGK  sky130_fd_pr__res_high_po_2p85_DZGNGK_0
-timestamp 1665585834
+timestamp 1668153059
 transform 1 0 6942 0 1 2346
 box -6995 -2369 6995 2369
 use sky130_fd_pr__res_high_po_2p85_DZGNGK  sky130_fd_pr__res_high_po_2p85_DZGNGK_1
-timestamp 1665585834
+timestamp 1668153059
 transform 1 0 6942 0 1 7084
 box -6995 -2369 6995 2369
 << labels >>

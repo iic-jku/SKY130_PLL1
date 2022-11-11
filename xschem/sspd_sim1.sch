@@ -16,10 +16,8 @@ N 510 120 560 120 {
 lab=clk}
 N 510 140 560 140 {
 lab=nclk}
-N 750 360 980 360 {
-lab=v_out}
 N 750 360 750 530 {
-lab=v_out}
+lab=#net1}
 N 220 330 220 500 {
 lab=s1}
 N 160 330 160 500 {
@@ -32,6 +30,16 @@ N 220 330 300 330 {
 lab=s1}
 N 300 330 440 330 {
 lab=s1}
+N 1100 500 1200 500 {
+lab=v_out}
+N 1100 470 1100 500 {
+lab=v_out}
+N 1120 360 1260 360 {
+lab=v_out}
+N 1200 500 1260 360 {
+lab=v_out}
+N 750 360 1060 360 {
+lab=#net1}
 C {devices/code_shown.sym} 460 -30 0 0 {name=s1 only_toplevel=false value=".lib /foss/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red tt"}
 C {devices/vsource.sym} 30 -130 0 0 {name=V1 value=0}
 C {devices/vsource.sym} 80 -130 0 0 {name=V2 value=1.8}
@@ -47,12 +55,13 @@ C {devices/vdd.sym} 220 -160 0 0 {name=l16 lab=ref_in}
 C {devices/code.sym} 440 -180 0 0 {name=s5 only_toplevel=false value="
 .control
 save ref_in vco_in clk nclk v_out @V1[i] @V3[i] s1 s2
-tran 0.05n 4800n 0n
+tran 0.005n 30000n 0n
 run
 *plot clk nclk xlimit 40n 160n
 *plot ref_in vco_in xlimit 0n 160n
 *plot s1 v_out
 *plot s1
+plot ref_in vco_in
 plot v_out
 *fft vco_in
 *plot db(mag(vco_in)) xlimit 0.1meg 200meg ylimit 0.0 -60
@@ -108,12 +117,6 @@ value=50f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 300 390 1 1 {name=l35 sig_type=std_logic lab=avss}
-C {devices/capa.sym} 810 390 0 0 {name=C2
-m=1
-value=20p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 810 420 3 0 {name=l17 sig_type=std_logic lab=avss}
 C {devices/vdd.sym} 520 420 2 0 {name=l18 lab=avss}
 C {devices/vdd.sym} 520 300 0 0 {name=l19 lab=avdd}
 C {sky130_fd_pr/nfet_01v8.sym} 720 340 1 0 {name=M11
@@ -150,7 +153,6 @@ C {devices/vsource.sym} 630 -130 0 0 {name=V4 value="PULSE 0.0 1.8 0 200ps 1ps 4
 C {devices/vdd.sym} 630 -100 2 0 {name=l24 lab=avss}
 C {devices/vdd.sym} 630 -160 0 0 {name=l26 lab=vco_in}
 C {devices/vdd.sym} 110 330 0 0 {name=l27 lab=vco_in}
-C {devices/lab_pin.sym} 980 360 2 0 {name=l28 sig_type=std_logic lab=v_out}
 C {devices/lab_pin.sym} 300 330 1 0 {name=l29 sig_type=std_logic lab=s1}
 C {devices/lab_pin.sym} 640 360 1 0 {name=l30 sig_type=std_logic lab=s2}
 C {devices/vdd.sym} 440 360 3 0 {name=l23 lab=vc}
@@ -221,3 +223,29 @@ value=10f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_pin.sym} 930 420 3 0 {name=l44 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 1260 360 0 1 {name=l100 sig_type=std_logic lab=v_out}
+C {devices/res.sym} 1100 530 0 0 {name=R1
+value=4k
+footprint=1206
+device=resistor
+m=1}
+C {devices/vsource.sym} 1100 590 0 0 {name=V9 value=1.08}
+C {devices/vdd.sym} 1100 620 2 0 {name=l106 lab=avss}
+C {devices/res.sym} 1200 530 0 0 {name=R2
+value=4k
+footprint=1206
+device=resistor
+m=1}
+C {devices/vdd.sym} 1200 560 2 0 {name=l105 lab=avss}
+C {devices/lab_pin.sym} 1100 560 0 0 {name=l107 sig_type=std_logic lab=filter}
+C {devices/capa.sym} 1160 390 0 0 {name=C10
+m=1
+value=200p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/res.sym} 1090 360 3 0 {name=R3
+value=4k
+footprint=1206
+device=resistor
+m=1}
+C {devices/vdd.sym} 1160 420 2 0 {name=l108 lab=avss}

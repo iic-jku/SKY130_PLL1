@@ -1,0 +1,35 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1668153059
+<< metal1 >>
+rect 0 539 42 581
+rect 878 534 884 586
+rect 936 534 942 586
+<< via1 >>
+rect 884 534 936 586
+<< metal2 >>
+rect 772 859 1049 919
+rect 884 586 936 592
+rect 878 539 884 581
+rect 2162 539 2204 581
+rect 884 528 936 534
+rect 676 210 1240 270
+use inv_simple1  inv_simple1_0
+timestamp 1668153059
+transform 1 0 53 0 1 613
+box -53 -613 858 525
+use inv_simple2  inv_simple2_0
+timestamp 1668153059
+transform 1 0 952 0 1 613
+box -42 -613 1252 525
+<< labels >>
+rlabel metal1 0 539 42 581 0 in1
+port 1 n
+rlabel metal2 2162 539 2204 581 0 out1
+port 2 n
+rlabel metal2 880 859 940 919 0 vdd
+port 3 n
+rlabel metal2 880 210 940 270 1 vss
+port 4 n
+<< end >>
