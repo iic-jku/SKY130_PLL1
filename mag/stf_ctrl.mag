@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1668153059
+timestamp 1668357910
 << metal1 >>
 rect 1540 1436 1582 1528
 rect 1801 1182 1871 1188
@@ -61,15 +61,15 @@ rect 2440 -1850 2510 -1215
 rect 2440 -2358 2510 -2288
 rect 1801 -2455 1871 -2385
 use tgate_1  tgate_1_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1801 0 1 2480
 box -261 -952 919 1138
 use tgate_1  tgate_1_1
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1801 0 1 434
 box -261 -952 919 1138
 use tgate_1  tgate_1_2
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1801 0 1 -1612
 box -261 -952 919 1138
 << labels >>

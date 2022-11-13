@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1668153059
+timestamp 1668357910
 << metal1 >>
 rect 1830 2866 1872 2908
 rect 2140 2866 2182 2908
@@ -161,39 +161,39 @@ rect 2706 -620 3099 -259
 rect 3191 -620 3209 -259
 rect 2706 -640 3209 -620
 use cap100f  cap100f_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 2056 0 -1 -940
 box -850 -800 750 800
 use inv_buffer2  inv_buffer2_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 -788 0 1 0
 box 0 0 2204 1138
 use inv_simple1  inv_simple1_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1468 0 1 613
 box -53 -613 858 525
 use sinv_n  sinv_n_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 2685 0 1 280
 box -359 -280 359 280
 use slope_p  sky130_fd_pr__pfet_01v8_BDAFKN_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 2083 0 1 1427
 box -1031 -289 1031 289
 use sinv_p2  sky130_fd_pr__pfet_01v8_X679XQ_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 2685 0 1 849
 box -359 -289 359 289
 use tgate_1  tgate_1_0
-timestamp 1668153059
+timestamp 1668357910
 transform 0 1 868 -1 0 2689
 box -261 -952 919 1138
 use tgate_1  tgate_1_1
-timestamp 1668153059
+timestamp 1668357910
 transform 0 -1 3144 -1 0 2689
 box -261 -952 919 1138
 use tgate_1  tgate_1_2
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 4425 0 1 632
 box -261 -952 919 1138
 << labels >>

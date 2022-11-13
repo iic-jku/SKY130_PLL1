@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1668153059
+timestamp 1668357910
 << metal1 >>
 rect 807 1886 871 1892
 rect -139 1822 807 1886
@@ -76,35 +76,35 @@ rect 1586 211 2054 281
 rect 2496 211 2730 269
 rect 2788 211 2794 269
 use diff_n  diff_n_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1557 0 1 1418
 box -359 -280 359 280
 use diff_p  diff_p_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1366 0 1 1987
 box -455 -289 455 289
 use inv_simple1  inv_simple1_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 53 0 1 613
 box -53 -613 858 525
 use inv_simple1  inv_simple1_1
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 963 0 1 613
 box -53 -613 858 525
 use inv_simple1  inv_simple1_2
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1873 0 1 613
 box -53 -613 858 525
 use inv_simple1  inv_simple1_3
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 1873 0 1 1751
 box -53 -613 858 525
 use diff_n  sky130_fd_pr__nfet_01v8_2AA63J_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 839 0 1 1418
 box -359 -280 359 280
 use diff_p  sky130_fd_pr__pfet_01v8_X6FFBL_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 456 0 1 1987
 box -455 -289 455 289
 << labels >>

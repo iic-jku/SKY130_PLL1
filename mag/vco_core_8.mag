@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1668153059
+timestamp 1668357910
 << metal1 >>
 rect -1475 2104 6544 2304
 rect -1475 1083 -1275 2104
@@ -583,52 +583,52 @@ rect 3833 -3477 3845 -3413
 rect 4322 -3459 4382 -3399
 rect 3757 -3489 3845 -3477
 use delay_cell_4  delay_cell_4_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 865 0 1 138
 box -1581 -735 1669 1085
 use delay_cell_4  delay_cell_4_1
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 4203 0 1 138
 box -1581 -735 1669 1085
 use delay_cell_4  delay_cell_4_2
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 4203 0 -1 -2316
 box -1581 -735 1669 1085
 use delay_cell_4  delay_cell_4_3
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 865 0 -1 -2316
 box -1581 -735 1669 1085
 << labels >>
 rlabel metal4 686 1221 746 1281 0 inv1
-rlabel metal4 1788 1221 1848 1281 0 inv2
-rlabel metal4 3220 1221 3280 1281 0 inv3
-rlabel metal4 4322 1221 4382 1281 6 inv4
-rlabel metal4 528 -218 606 -140 0 out1
 port 6 n
-rlabel metal4 1927 -478 2005 -400 0 out2
+rlabel metal4 1788 1221 1848 1281 0 inv2
 port 7 n
-rlabel metal4 3063 -738 3141 -660 7 out3
+rlabel metal4 3220 1221 3280 1281 0 inv3
 port 8 n
-rlabel metal4 4462 -998 4540 -920 0 out4
+rlabel metal4 4322 1221 4382 1281 6 inv4
 port 9 n
-rlabel metal4 528 -1258 606 -1180 0 out8
-port 13 n
+rlabel metal4 528 -218 606 -140 0 out1
+rlabel metal4 1927 -478 2005 -400 0 out2
+rlabel metal4 3063 -738 3141 -660 7 out4
+rlabel metal4 4462 -998 4540 -920 0 out3
+rlabel metal4 528 -1258 606 -1180 0 out7
 rlabel metal1 2653 -1106 2687 -1072 7 b2
 port 3 n
 rlabel metal1 2517 -1106 2551 -1072 0 b1
 port 4 n
 rlabel metal1 2381 -1106 2415 -1072 0 b0
 port 5 n
-rlabel metal4 1927 -1518 2005 -1440 5 out7
-port 12 n
+rlabel metal4 1927 -1518 2005 -1440 5 out8
 rlabel metal4 4462 -1778 4540 -1700 0 out5
-port 10 n
 rlabel metal4 3063 -2038 3141 -1960 3 out6
-port 11 n
 rlabel metal4 4322 -3459 4382 -3399 7 inv5
+port 10 n
 rlabel metal4 3220 -3459 3280 -3399 3 inv6
+port 11 n
 rlabel metal4 1788 -3459 1848 -3399 4 inv7
+port 12 n
 rlabel metal4 686 -3459 746 -3399 7 inv8
+port 13 n
 rlabel metal3 5784 943 5844 1003 0 vdd
 port 1 n
 rlabel metal3 5784 -3181 5844 -3121 0 vdd

@@ -41,12 +41,6 @@ N 1580 -730 1590 -730 { lab=vdd}
 N 940 -700 950 -700 { lab=vdd}
 N 950 -730 950 -700 { lab=vdd}
 N 940 -730 950 -730 { lab=vdd}
-N 1120 -560 1130 -560 { lab=#net1}
-N 1130 -560 1130 -530 { lab=#net1}
-N 1120 -530 1130 -530 { lab=#net1}
-N 1410 -530 1420 -530 { lab=#net1}
-N 1410 -560 1410 -530 { lab=#net1}
-N 1410 -560 1420 -560 { lab=#net1}
 N 970 -560 1080 -560 { lab=din1}
 N 1460 -560 1570 -560 { lab=din2}
 N 1420 -600 1570 -600 { lab=dout2}
@@ -94,8 +88,6 @@ lab=#net1}
 N 1270 -510 1310 -480 {
 lab=#net1}
 N 1270 -450 1310 -480 {
-lab=#net1}
-N 1270 -480 1270 -450 {
 lab=#net1}
 N 1930 -720 1940 -720 {
 lab=vdd}
@@ -172,9 +164,9 @@ lab=vdd}
 N 720 -750 760 -720 {
 lab=vdd}
 N 1930 -690 2030 -690 {
-lab=#net2}
+lab=inv1}
 N 500 -690 590 -690 {
-lab=#net3}
+lab=inv1}
 N 1780 -670 1890 -670 {
 lab=dout2}
 N 1770 -720 1810 -690 {
@@ -188,15 +180,15 @@ lab=vdd}
 N 720 -690 760 -720 {
 lab=vdd}
 N 2030 -690 2170 -690 {
-lab=#net2}
+lab=inv1}
 N 340 -690 500 -690 {
-lab=#net3}
+lab=inv1}
 N 460 -630 500 -660 {
 lab=vss}
 N 460 -660 460 -630 {
 lab=vss}
 N 900 -350 1050 -350 {
-lab=#net4}
+lab=#net2}
 N 900 -290 940 -320 {
 lab=vss}
 N 900 -320 900 -290 {
@@ -473,8 +465,8 @@ spiceprefix=X
 C {devices/lab_pin.sym} 1050 -290 3 0 {name=p15 sig_type=std_logic lab=vss}
 C {sky130_fd_pr/pfet_01v8.sym} 1670 -720 0 0 {name=M21
 L=0.15
-W=1.4
-nf=2
+W=0.7
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -487,8 +479,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 860 -720 0 1 {name=M20
 L=0.15
-W=1.4
-nf=2
+W=0.7
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -573,3 +565,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 1420 -560 0 0 {name=p20 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 1270 -480 0 0 {name=p21 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 1120 -560 0 1 {name=p22 sig_type=std_logic lab=vss}
+C {devices/iopin.sym} 340 -690 3 0 {name=p23 lab=inv1}
+C {devices/iopin.sym} 2170 -690 3 0 {name=p25 lab=inv2}

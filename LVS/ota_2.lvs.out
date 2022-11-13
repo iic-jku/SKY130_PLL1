@@ -1,0 +1,62 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell ota_half in circuit ota_2 (0)(2 instances)
+Flattening unmatched subcell o_n_3 in circuit ota_2 (0)(2 instances)
+Flattening unmatched subcell o_p_1 in circuit ota_2 (0)(2 instances)
+Flattening unmatched subcell o_n_2 in circuit ota_2 (0)(2 instances)
+Flattening unmatched subcell ota_bias in circuit ota_2 (0)(1 instance)
+
+Class ota_2 (0):  Merged 76 parallel devices.
+Subcircuit summary:
+Circuit 1: ota_2                           |Circuit 2: ota_2                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (40->7)            |sky130_fd_pr__nfet_01v8 (7)                
+sky130_fd_pr__pfet_01v8 (48->5)            |sky130_fd_pr__pfet_01v8 (5)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ota_2                           |Circuit 2: ota_2                           
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+vdd                                        |vdd                                        
+in_p                                       |in_p                                       
+in_n                                       |in_n                                       
+vbias                                      |vbias                                      
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ota_2 and ota_2 are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,63 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_high_po_2p85 and Circuit 2 cell sky130_fd_pr__res_high_po_2p85 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_2p85  |Circuit 2: sky130_fd_pr__res_high_po_2p85  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_2p85 and sky130_fd_pr__res_high_po_2p85 are equivalent.
+Flattening unmatched subcell cap_200p in circuit voltage_control (0)(1 instance)
+Flattening unmatched subcell r_8k in circuit voltage_control (0)(1 instance)
+
+Cell voltage_control (1) disconnected node: vdd
+Cell voltage_control (1) disconnected node: lock
+Cell voltage_control (1) disconnected node: vcoarse
+Class voltage_control (0):  Merged 110 parallel devices.
+Class voltage_control (0):  Merged 3 series devices.
+Class voltage_control (1):  Merged 1 parallel devices.
+Cell voltage_control (1) disconnected node: vdd
+Cell voltage_control (1) disconnected node: lock
+Cell voltage_control (1) disconnected node: vcoarse
+Subcircuit summary:
+Circuit 1: voltage_control                 |Circuit 2: voltage_control                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (110->1)        |sky130_fd_pr__cap_mim_m3_1 (1)             
+sky130_fd_pr__res_high_po_2p85 (6->2)      |sky130_fd_pr__res_high_po_2p85 (6->2)      
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: voltage_control                 |Circuit 2: voltage_control                 
+-------------------------------------------|-------------------------------------------
+vss                                        |vss                                        
+vfine                                      |vfine                                      
+vout                                       |vout                                       
+(no matching pin)                          |vdd                                        
+(no matching pin)                          |lock                                       
+(no matching pin)                          |vcoarse                                    
+---------------------------------------------------------------------------------------
+Cell pin lists for voltage_control and voltage_control altered to match.
+Device classes voltage_control and voltage_control are equivalent.
+
+Final result: Top level cell failed pin matching.

@@ -1,0 +1,158 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sinv_p in circuit inv_simple1 (0)(1 instance)
+Flattening unmatched subcell sinv_n in circuit inv_simple1 (0)(1 instance)
+
+Class inv_simple1 (0):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: inv_simple1                     |Circuit 2: inv_simple1                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (4->2)             |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv_simple1                     |Circuit 2: inv_simple1                     
+-------------------------------------------|-------------------------------------------
+out                                        |out                                        
+in                                         |in                                         
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_simple1 and inv_simple1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell inv_simple2 in circuit inv_buffer2 (0)(1 instance)
+Flattening unmatched subcell sinv2_p in circuit inv_buffer2 (0)(1 instance)
+Flattening unmatched subcell sinv2_n in circuit inv_buffer2 (0)(1 instance)
+
+Class inv_buffer2 (0):  Merged 12 parallel devices.
+Subcircuit summary:
+Circuit 1: inv_buffer2                     |Circuit 2: inv_buffer2                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (10->2)            |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (6->2)             |sky130_fd_pr__nfet_01v8 (2)                
+inv_simple1 (1)                            |inv_simple1 (1)                            
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inv_buffer2                     |Circuit 2: inv_buffer2                     
+-------------------------------------------|-------------------------------------------
+in1                                        |in1                                        
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+out1                                       |out1                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inv_buffer2 and inv_buffer2 are equivalent.
+Flattening unmatched subcell tg_1 in circuit tgate_1 (0)(1 instance)
+Flattening unmatched subcell tg_p in circuit tgate_1 (0)(1 instance)
+Flattening unmatched subcell tg_n in circuit tgate_1 (0)(1 instance)
+
+Class tgate_1 (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: tgate_1                         |Circuit 2: tgate_1                         
+-------------------------------------------|-------------------------------------------
+inv_simple1 (1)                            |inv_simple1 (1)                            
+sky130_fd_pr__pfet_01v8 (4->2)             |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (4->2)             |sky130_fd_pr__nfet_01v8 (2)                
+Number of devices: 5                       |Number of devices: 5                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tgate_1                         |Circuit 2: tgate_1                         
+-------------------------------------------|-------------------------------------------
+sw_out                                     |sw_out                                     
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+sw                                         |sw                                         
+sw_in                                      |sw_in                                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tgate_1 and tgate_1 are equivalent.
+Flattening unmatched subcell slope_p in circuit slopebuf (0)(1 instance)
+Flattening unmatched subcell cap100f in circuit slopebuf (0)(1 instance)
+Flattening unmatched subcell sinv_n in circuit slopebuf (0)(1 instance)
+Flattening unmatched subcell sinv_p2 in circuit slopebuf (0)(1 instance)
+
+Class slopebuf (0):  Merged 17 parallel devices.
+Subcircuit summary:
+Circuit 1: slopebuf                        |Circuit 2: slopebuf                        
+-------------------------------------------|-------------------------------------------
+inv_buffer2 (1)                            |inv_buffer2 (1)                            
+inv_simple1 (1)                            |inv_simple1 (1)                            
+sky130_fd_pr__pfet_01v8 (22->7)            |sky130_fd_pr__pfet_01v8 (7)                
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+sky130_fd_pr__nfet_01v8 (4->2)             |sky130_fd_pr__nfet_01v8 (2)                
+tgate_1 (3)                                |tgate_1 (3)                                
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: slopebuf                        |Circuit 2: slopebuf                        
+-------------------------------------------|-------------------------------------------
+vbias                                      |vbias                                      
+clk_out                                    |clk_out                                    
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+clk_in                                     |clk_in                                     
+bit1                                       |bit1                                       
+bit0                                       |bit0                                       
+bit2                                       |bit2                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes slopebuf and slopebuf are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,10 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1668153059
+timestamp 1668357910
 << pwell >>
-rect 1435 -70 1821 0
-rect 3455 -70 3841 0
+rect 1821 0 3455 560
+rect 1435 -70 3841 0
 rect 1435 -256 2087 -70
 rect 3189 -256 3841 -70
 << metal1 >>
@@ -157,15 +157,15 @@ rect 2603 -560 2673 -418
 rect 4064 -560 4134 210
 rect 1142 -630 4134 -560
 use ota_bias  ota_bias_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 2638 0 1 -350
 box -551 -280 551 280
 use ota_half  ota_half_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 53 0 1 613
 box -53 -613 2585 525
 use ota_half  ota_half_1
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 5223 0 1 613
 box -53 -613 2585 525
 << labels >>

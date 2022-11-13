@@ -1,0 +1,49 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_2p85 and Circuit 2 cell sky130_fd_pr__res_high_po_2p85 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_2p85  |Circuit 2: sky130_fd_pr__res_high_po_2p85  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_2p85 and sky130_fd_pr__res_high_po_2p85 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_97D7UQ in circuit r2r_10 (0)(2 instances)
+
+Class r2r_10 (0):  Merged 10 parallel devices.
+Class r2r_10 (0):  Merged 11 series devices.
+Class r2r_10 (1):  Merged 10 parallel devices.
+Subcircuit summary:
+Circuit 1: r2r_10                          |Circuit 2: r2r_10                          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_2p85 (42->21)    |sky130_fd_pr__res_high_po_2p85 (31->21)    
+Number of devices: 21                      |Number of devices: 21                      
+Number of nets: 21                         |Number of nets: 21                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: r2r_10                          |Circuit 2: r2r_10                          
+-------------------------------------------|-------------------------------------------
+b0                                         |b0                                         
+b8                                         |b8                                         
+b1                                         |b1                                         
+b6                                         |b6                                         
+b2                                         |b2                                         
+b3                                         |b3                                         
+b4                                         |b4                                         
+b5                                         |b5                                         
+b7                                         |b7                                         
+b9                                         |b9                                         
+vout                                       |vout                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes r2r_10 and r2r_10 are equivalent.
+
+Final result: Circuits match uniquely.
+.

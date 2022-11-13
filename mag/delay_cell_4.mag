@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1668153059
+timestamp 1668357910
+<< pwell >>
+rect -245 -53 1049 507
+rect -341 -175 1145 -53
 << metal1 >>
 rect 514 958 578 964
 rect 514 950 520 958
@@ -370,39 +373,39 @@ rect 908 -163 920 -99
 rect 984 -163 996 -99
 rect 908 -175 996 -163
 use current_tails_1  current_tails_1_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 402 0 1 -455
 box -743 -280 743 280
 use n_cell_3  n_cell_3_0
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 -1175 0 1 227
 box -310 -280 310 280
 use n_cell_3  sky130_fd_pr__nfet_01v8_5ZA63U_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 -555 0 1 227
 box -310 -280 310 280
 use n_cell_3  sky130_fd_pr__nfet_01v8_5ZA63U_1
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 1359 0 1 227
 box -310 -280 310 280
 use n_cell_1  sky130_fd_pr__nfet_01v8_lvt_GVQ53W_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 402 0 1 227
 box -455 -280 455 280
 use p_cell_3  sky130_fd_pr__pfet_01v8_X6PFBL_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 402 0 1 796
 box -551 -289 551 289
 use sky130_fd_pr__pfet_01v8_X679XQ  sky130_fd_pr__pfet_01v8_X679XQ_0
-timestamp 1668153059
+timestamp 1668357910
 transform 1 0 -507 0 -1 795
 box -358 -288 358 288
 use sky130_fd_pr__pfet_01v8_X679XQ  sky130_fd_pr__pfet_01v8_X679XQ_1
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 1311 0 -1 795
 box -358 -288 358 288
 use sky130_fd_pr__pfet_01v8_X679XQ  sky130_fd_pr__pfet_01v8_X679XQ_2
-timestamp 1668153059
+timestamp 1668357910
 transform -1 0 -1223 0 -1 795
 box -358 -288 358 288
 << labels >>
@@ -424,7 +427,10 @@ rlabel metal2 1635 -597 1669 -563 6 b0
 port 9 n
 rlabel metal2 1635 -699 1669 -665 0 b2
 port 10 n
-rlabel metal2 380 -122 424 -78 3 net1
 rlabel metal3 -1581 157 -1521 217 0 vss
 port 3 n
+rlabel metal4 -179 1023 -119 1083 0 inv1
+port 11 n
+rlabel metal4 923 1023 983 1083 3 inv2
+port 12 n
 << end >>

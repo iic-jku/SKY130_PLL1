@@ -1,0 +1,158 @@
+v {xschem version=3.1.0 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -49.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -502 0 0 0.2 0.2 {}
+L 4 -130 -490 130 -490 {}
+L 4 -130 490 130 490 {}
+L 4 -130 -490 -130 490 {}
+L 4 130 -490 130 490 {}
+B 5 147.5 -482.5 152.5 -477.5 {name=ref_in sig_type=std_logic dir=inout }
+L 7 130 -480 150 -480 {}
+T {ref_in} 125 -484 0 1 0.2 0.2 {}
+B 5 147.5 -462.5 152.5 -457.5 {name=dac9 sig_type=std_logic dir=inout }
+L 7 130 -460 150 -460 {}
+T {dac9} 125 -464 0 1 0.2 0.2 {}
+B 5 147.5 -442.5 152.5 -437.5 {name=lock sig_type=std_logic dir=inout }
+L 7 130 -440 150 -440 {}
+T {lock} 125 -444 0 1 0.2 0.2 {}
+B 5 147.5 -422.5 152.5 -417.5 {name=dac8 sig_type=std_logic dir=inout }
+L 7 130 -420 150 -420 {}
+T {dac8} 125 -424 0 1 0.2 0.2 {}
+B 5 147.5 -402.5 152.5 -397.5 {name=vco_in sig_type=std_logic dir=inout }
+L 7 130 -400 150 -400 {}
+T {vco_in} 125 -404 0 1 0.2 0.2 {}
+B 5 147.5 -382.5 152.5 -377.5 {name=s_out sig_type=std_logic dir=inout }
+L 7 130 -380 150 -380 {}
+T {s_out} 125 -384 0 1 0.2 0.2 {}
+B 5 147.5 -362.5 152.5 -357.5 {name=vb17 sig_type=std_logic dir=inout }
+L 7 130 -360 150 -360 {}
+T {vb17} 125 -364 0 1 0.2 0.2 {}
+B 5 147.5 -342.5 152.5 -337.5 {name=vb27 sig_type=std_logic dir=inout }
+L 7 130 -340 150 -340 {}
+T {vb27} 125 -344 0 1 0.2 0.2 {}
+B 5 147.5 -322.5 152.5 -317.5 {name=vb37 sig_type=std_logic dir=inout }
+L 7 130 -320 150 -320 {}
+T {vb37} 125 -324 0 1 0.2 0.2 {}
+B 5 147.5 -302.5 152.5 -297.5 {name=dac7 sig_type=std_logic dir=inout }
+L 7 130 -300 150 -300 {}
+T {dac7} 125 -304 0 1 0.2 0.2 {}
+B 5 147.5 -282.5 152.5 -277.5 {name=vb36 sig_type=std_logic dir=inout }
+L 7 130 -280 150 -280 {}
+T {vb36} 125 -284 0 1 0.2 0.2 {}
+B 5 147.5 -262.5 152.5 -257.5 {name=vb16 sig_type=std_logic dir=inout }
+L 7 130 -260 150 -260 {}
+T {vb16} 125 -264 0 1 0.2 0.2 {}
+B 5 147.5 -242.5 152.5 -237.5 {name=ss sig_type=std_logic dir=inout }
+L 7 130 -240 150 -240 {}
+T {ss} 125 -244 0 1 0.2 0.2 {}
+B 5 147.5 -222.5 152.5 -217.5 {name=dac6 sig_type=std_logic dir=inout }
+L 7 130 -220 150 -220 {}
+T {dac6} 125 -224 0 1 0.2 0.2 {}
+B 5 147.5 -202.5 152.5 -197.5 {name=vb26 sig_type=std_logic dir=inout }
+L 7 130 -200 150 -200 {}
+T {vb26} 125 -204 0 1 0.2 0.2 {}
+B 5 147.5 -182.5 152.5 -177.5 {name=s_in sig_type=std_logic dir=inout }
+L 7 130 -180 150 -180 {}
+T {s_in} 125 -184 0 1 0.2 0.2 {}
+B 5 147.5 -162.5 152.5 -157.5 {name=vb35 sig_type=std_logic dir=inout }
+L 7 130 -160 150 -160 {}
+T {vb35} 125 -164 0 1 0.2 0.2 {}
+B 5 147.5 -142.5 152.5 -137.5 {name=vb15 sig_type=std_logic dir=inout }
+L 7 130 -140 150 -140 {}
+T {vb15} 125 -144 0 1 0.2 0.2 {}
+B 5 147.5 -122.5 152.5 -117.5 {name=dac5 sig_type=std_logic dir=inout }
+L 7 130 -120 150 -120 {}
+T {dac5} 125 -124 0 1 0.2 0.2 {}
+B 5 147.5 -102.5 152.5 -97.5 {name=vb25 sig_type=std_logic dir=inout }
+L 7 130 -100 150 -100 {}
+T {vb25} 125 -104 0 1 0.2 0.2 {}
+B 5 147.5 -82.5 152.5 -77.5 {name=tt sig_type=std_logic dir=inout }
+L 7 130 -80 150 -80 {}
+T {tt} 125 -84 0 1 0.2 0.2 {}
+B 5 147.5 -62.5 152.5 -57.5 {name=load sig_type=std_logic dir=inout }
+L 7 130 -60 150 -60 {}
+T {load} 125 -64 0 1 0.2 0.2 {}
+B 5 147.5 -42.5 152.5 -37.5 {name=vb34 sig_type=std_logic dir=inout }
+L 7 130 -40 150 -40 {}
+T {vb34} 125 -44 0 1 0.2 0.2 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=ff sig_type=std_logic dir=inout }
+L 7 130 -20 150 -20 {}
+T {ff} 125 -24 0 1 0.2 0.2 {}
+B 5 147.5 -2.5 152.5 2.5 {name=vb14 sig_type=std_logic dir=inout }
+L 7 130 0 150 0 {}
+T {vb14} 125 -4 0 1 0.2 0.2 {}
+B 5 147.5 17.5 152.5 22.5 {name=vb24 sig_type=std_logic dir=inout }
+L 7 130 20 150 20 {}
+T {vb24} 125 16 0 1 0.2 0.2 {}
+B 5 147.5 37.5 152.5 42.5 {name=dac4 sig_type=std_logic dir=inout }
+L 7 130 40 150 40 {}
+T {dac4} 125 36 0 1 0.2 0.2 {}
+B 5 147.5 57.5 152.5 62.5 {name=vb33 sig_type=std_logic dir=inout }
+L 7 130 60 150 60 {}
+T {vb33} 125 56 0 1 0.2 0.2 {}
+B 5 147.5 77.5 152.5 82.5 {name=read sig_type=std_logic dir=inout }
+L 7 130 80 150 80 {}
+T {read} 125 76 0 1 0.2 0.2 {}
+B 5 147.5 97.5 152.5 102.5 {name=vb13 sig_type=std_logic dir=inout }
+L 7 130 100 150 100 {}
+T {vb13} 125 96 0 1 0.2 0.2 {}
+B 5 147.5 117.5 152.5 122.5 {name=vb23 sig_type=std_logic dir=inout }
+L 7 130 120 150 120 {}
+T {vb23} 125 116 0 1 0.2 0.2 {}
+B 5 147.5 137.5 152.5 142.5 {name=dac3 sig_type=std_logic dir=inout }
+L 7 130 140 150 140 {}
+T {dac3} 125 136 0 1 0.2 0.2 {}
+B 5 147.5 157.5 152.5 162.5 {name=vb32 sig_type=std_logic dir=inout }
+L 7 130 160 150 160 {}
+T {vb32} 125 156 0 1 0.2 0.2 {}
+B 5 147.5 177.5 152.5 182.5 {name=slope2 sig_type=std_logic dir=inout }
+L 7 130 180 150 180 {}
+T {slope2} 125 176 0 1 0.2 0.2 {}
+B 5 147.5 197.5 152.5 202.5 {name=vb12 sig_type=std_logic dir=inout }
+L 7 130 200 150 200 {}
+T {vb12} 125 196 0 1 0.2 0.2 {}
+B 5 147.5 217.5 152.5 222.5 {name=vb22 sig_type=std_logic dir=inout }
+L 7 130 220 150 220 {}
+T {vb22} 125 216 0 1 0.2 0.2 {}
+B 5 147.5 237.5 152.5 242.5 {name=dac2 sig_type=std_logic dir=inout }
+L 7 130 240 150 240 {}
+T {dac2} 125 236 0 1 0.2 0.2 {}
+B 5 147.5 257.5 152.5 262.5 {name=clk_in dir=inout }
+L 7 130 260 150 260 {}
+T {clk_in} 125 256 0 1 0.2 0.2 {}
+B 5 147.5 277.5 152.5 282.5 {name=vb31 sig_type=std_logic dir=inout }
+L 7 130 280 150 280 {}
+T {vb31} 125 276 0 1 0.2 0.2 {}
+B 5 147.5 297.5 152.5 302.5 {name=slope1 sig_type=std_logic dir=inout }
+L 7 130 300 150 300 {}
+T {slope1} 125 296 0 1 0.2 0.2 {}
+B 5 147.5 317.5 152.5 322.5 {name=vb21 sig_type=std_logic dir=inout }
+L 7 130 320 150 320 {}
+T {vb21} 125 316 0 1 0.2 0.2 {}
+B 5 147.5 337.5 152.5 342.5 {name=dac1 sig_type=std_logic dir=inout }
+L 7 130 340 150 340 {}
+T {dac1} 125 336 0 1 0.2 0.2 {}
+B 5 147.5 357.5 152.5 362.5 {name=vb11 sig_type=std_logic dir=inout }
+L 7 130 360 150 360 {}
+T {vb11} 125 356 0 1 0.2 0.2 {}
+B 5 147.5 377.5 152.5 382.5 {name=vb30 sig_type=std_logic dir=inout }
+L 7 130 380 150 380 {}
+T {vb30} 125 376 0 1 0.2 0.2 {}
+B 5 147.5 397.5 152.5 402.5 {name=slope0 sig_type=std_logic dir=inout }
+L 7 130 400 150 400 {}
+T {slope0} 125 396 0 1 0.2 0.2 {}
+B 5 147.5 417.5 152.5 422.5 {name=dac0 sig_type=std_logic dir=inout }
+L 7 130 420 150 420 {}
+T {dac0} 125 416 0 1 0.2 0.2 {}
+B 5 147.5 437.5 152.5 442.5 {name=vb20 sig_type=std_logic dir=inout }
+L 7 130 440 150 440 {}
+T {vb20} 125 436 0 1 0.2 0.2 {}
+B 5 147.5 457.5 152.5 462.5 {name=vb10 sig_type=std_logic dir=inout }
+L 7 130 460 150 460 {}
+T {vb10} 125 456 0 1 0.2 0.2 {}
+B 5 147.5 477.5 152.5 482.5 {name=reset dir=inout }
+L 7 130 480 150 480 {}
+T {reset} 125 476 0 1 0.2 0.2 {}

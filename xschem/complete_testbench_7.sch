@@ -150,11 +150,6 @@ C {devices/vdd.sym} 670 60 0 0 {name=l21 lab=1b}
 C {devices/vdd.sym} 200 80 0 0 {name=l22 lab=1b}
 C {devices/vdd.sym} 240 80 0 0 {name=l30 lab=1b}
 C {devices/vdd.sym} 220 80 0 0 {name=l31 lab=0b}
-C {devices/capa.sym} 1320 130 2 1 {name=C10
-m=1
-value=200p
-footprint=1206
-device="ceramic capacitor"}
 C {devices/capa.sym} 1150 350 0 0 {name=C1
 m=1
 value=10f
@@ -167,3 +162,4 @@ value=8k
 footprint=1206
 device=resistor
 m=1}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1320 130 0 0 {name=C2 model=cap_mim_m3_1 W=300 L=330 MF=1 spiceprefix=X}

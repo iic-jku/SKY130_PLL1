@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
@@ -19,21 +20,21 @@ L 7 140 -120 140 -100 {}
 L 7 110 -120 110 -100 {}
 L 7 80 -120 80 -100 {}
 L 7 170 -120 170 -100 {}
-B 5 47.5 -122.5 52.5 -117.5 {name=avdd dir=inout }
-B 5 47.5 -22.5 52.5 -17.5 {name=avss dir=inout }
+B 5 47.5 -122.5 52.5 -117.5 {name=vdd dir=inout }
+B 5 47.5 -22.5 52.5 -17.5 {name=vss dir=inout }
 B 5 7.5 -72.5 12.5 -67.5 {name=clk_in dir=inout }
 B 5 227.5 -72.5 232.5 -67.5 {name=clk_out dir=inout }
 B 5 137.5 -122.5 142.5 -117.5 {name=bit0 dir=inout }
 B 5 107.5 -122.5 112.5 -117.5 {name=bit1 dir=inout }
 B 5 77.5 -122.5 82.5 -117.5 {name=bit2 dir=inout }
-B 5 167.5 -122.5 172.5 -117.5 {name=v_bias dir=inout }
+B 5 167.5 -122.5 172.5 -117.5 {name=vbias dir=inout }
 T {@symname} 66 -78.5 0 0 0.3 0.3 {}
 T {@name} 175 -112 0 0 0.2 0.2 {}
-T {avdd} 62.5 -96.5 0 1 0.2 0.2 {}
-T {avss} 60 -54 0 1 0.2 0.2 {}
+T {vdd} 60 -96.5 0 1 0.2 0.2 {}
+T {vss} 57.5 -54 0 1 0.2 0.2 {}
 T {clk_in} 65 -74 0 1 0.2 0.2 {}
 T {clk_out} 205 -74 0 1 0.2 0.2 {}
 T {bit0} 150 -96.5 0 1 0.2 0.2 {}
 T {bit1} 120 -96.5 0 1 0.2 0.2 {}
 T {bit2} 90 -96.5 0 1 0.2 0.2 {}
-T {v_bias} 187.5 -96.5 0 1 0.2 0.2 {}
+T {vbias} 185 -96.5 0 1 0.2 0.2 {}

@@ -31,7 +31,7 @@ N 560 -110 570 -110 {
 lab=vss}
 N 120 -80 120 -60 {
 lab=vss}
-N 120 -60 560 -60 {
+N 340 -60 560 -60 {
 lab=vss}
 N 560 -80 560 -60 {
 lab=vss}
@@ -59,7 +59,7 @@ N 120 -140 160 -140 {
 lab=#net1}
 N 260 -230 260 -220 {
 lab=#net2}
-N 260 -220 420 -220 {
+N 340 -220 420 -220 {
 lab=#net2}
 N 560 -430 560 -400 {
 lab=vdd}
@@ -95,7 +95,7 @@ N 340 -140 340 -60 {
 lab=vss}
 N 340 -220 340 -200 {
 lab=#net2}
-N 120 -430 560 -430 {
+N 420 -430 560 -430 {
 lab=vdd}
 N 560 -430 710 -430 {
 lab=vdd}
@@ -119,23 +119,25 @@ N 710 -90 710 -60 {
 lab=vss}
 N 420 -230 420 -220 {
 lab=#net2}
-N 410 -230 420 -230 {
-lab=#net2}
-N 410 -260 410 -230 {
-lab=#net2}
-N 410 -260 420 -260 {
-lab=#net2}
-N 260 -230 270 -230 {
-lab=#net2}
-N 270 -260 270 -230 {
-lab=#net2}
-N 260 -260 270 -260 {
-lab=#net2}
+N 260 -260 420 -260 {
+lab=vss}
 N 640 -250 680 -280 {
 lab=#net2}
 N 640 -250 680 -220 {
 lab=#net2}
-N 680 -250 680 -220 {
+N 680 -250 780 -250 {
+lab=vss}
+N 780 -250 780 -60 {
+lab=vss}
+N 710 -60 780 -60 {
+lab=vss}
+N 260 -430 420 -430 {
+lab=vdd}
+N 120 -430 260 -430 {
+lab=vdd}
+N 120 -60 340 -60 {
+lab=vss}
+N 260 -220 340 -220 {
 lab=#net2}
 C {devices/iopin.sym} 250 -590 0 0 {name=p1 lab=vdd}
 C {devices/iopin.sym} 250 -570 0 0 {name=p2 lab=vss}
@@ -317,3 +319,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/lab_wire.sym} 350 -260 0 0 {name=p6 sig_type=std_logic lab=vss}

@@ -1,0 +1,150 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class current_tails_1 (0):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: current_tails_1                 |Circuit 2: current_tails_1                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (12->4)            |sky130_fd_pr__nfet_01v8 (4)                
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: current_tails_1                 |Circuit 2: current_tails_1                 
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+swff                                       |swff                                       
+swtt                                       |swtt                                       
+swss                                       |swss                                       
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes current_tails_1 and current_tails_1 are equivalent.
+Flattening unmatched subcell n_cell_1 in circuit delay_cell_4 (0)(1 instance)
+Flattening unmatched subcell p_cell_3 in circuit delay_cell_4 (0)(1 instance)
+Flattening unmatched subcell n_cell_3 in circuit delay_cell_4 (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_X679XQ in circuit delay_cell_4 (0)(3 instances)
+
+Class delay_cell_4 (0):  Merged 14 parallel devices.
+Class delay_cell_4 (1):  Merged 3 parallel devices.
+Subcircuit summary:
+Circuit 1: delay_cell_4                    |Circuit 2: delay_cell_4                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (6->3)         |sky130_fd_pr__nfet_01v8_lvt (3)            
+sky130_fd_pr__pfet_01v8 (20->12)           |sky130_fd_pr__pfet_01v8 (14->12)           
+current_tails_1 (1)                        |current_tails_1 (1)                        
+sky130_fd_pr__nfet_01v8 (9->6)             |sky130_fd_pr__nfet_01v8 (7->6)             
+Number of devices: 22                      |Number of devices: 22                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: delay_cell_4                    |Circuit 2: delay_cell_4                    
+-------------------------------------------|-------------------------------------------
+inv2                                       |inv2                                       
+inv1                                       |inv1                                       
+vdd                                        |vdd                                        
+vb                                         |vb                                         
+current_tails_1_0/in                       |(no matching pin)                          
+dout1                                      |dout1                                      
+dout2                                      |dout2                                      
+din2                                       |din2                                       
+din1                                       |din1                                       
+b2                                         |b2                                         
+b1                                         |b1                                         
+b0                                         |b0                                         
+vss                                        |vss                                        
+current_tails_1_0/in                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for delay_cell_4 and delay_cell_4 altered to match.
+Device classes delay_cell_4 and delay_cell_4 are equivalent.
+  Flattening non-matched subcircuits delay_cell_4 delay_cell_4
+
+Class vco_core_8 (0):  Merged 6 parallel devices.
+Class vco_core_8 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: vco_core_8                      |Circuit 2: vco_core_8                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (12)           |sky130_fd_pr__nfet_01v8_lvt (12)           
+sky130_fd_pr__pfet_01v8 (48->45)           |sky130_fd_pr__pfet_01v8 (48->45)           
+current_tails_1 (4)                        |current_tails_1 (4)                        
+sky130_fd_pr__nfet_01v8 (28->21)           |sky130_fd_pr__nfet_01v8 (28->21)           
+Number of devices: 82                      |Number of devices: 82                      
+Number of nets: 30                         |Number of nets: 30                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 3 symmetries.
+
+Subcircuit pins:
+Circuit 1: vco_core_8                      |Circuit 2: vco_core_8                      
+-------------------------------------------|-------------------------------------------
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+inv7                                       |inv7                                       
+inv8                                       |inv8                                       
+inv6                                       |inv6                                       
+inv5                                       |inv5                                       
+inv3                                       |inv3                                       
+inv4                                       |inv4                                       
+inv2                                       |inv2                                       
+inv1                                       |inv1                                       
+b2                                         |b2                                         
+b1                                         |b1                                         
+b0                                         |b0                                         
+vdelay                                     |vdelay                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes vco_core_8 and vco_core_8 are equivalent.
+
+Final result: Circuits match uniquely.
+.
