@@ -1,0 +1,46 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -100 130 -100 {}
+L 4 -130 100 130 100 {}
+L 4 -130 -100 -130 100 {}
+L 4 130 -100 130 100 {}
+L 7 130 -90 150 -90 {}
+L 7 130 -70 150 -70 {}
+L 7 130 -50 150 -50 {}
+L 7 130 -30 150 -30 {}
+L 7 130 -10 150 -10 {}
+L 7 130 10 150 10 {}
+L 7 130 30 150 30 {}
+L 7 130 50 150 50 {}
+L 7 130 70 150 70 {}
+L 7 130 90 150 90 {}
+B 5 147.5 -92.5 152.5 -87.5 {name=vdd dir=inout }
+B 5 147.5 -72.5 152.5 -67.5 {name=vss dir=inout }
+B 5 147.5 -52.5 152.5 -47.5 {name=ref_out dir=inout }
+B 5 147.5 -32.5 152.5 -27.5 {name=ref_in dir=inout }
+B 5 147.5 -12.5 152.5 -7.5 {name=s_out dir=inout }
+B 5 147.5 7.5 152.5 12.5 {name=s_in dir=inout }
+B 5 147.5 27.5 152.5 32.5 {name=load dir=inout }
+B 5 147.5 47.5 152.5 52.5 {name=read dir=inout }
+B 5 147.5 67.5 152.5 72.5 {name=clk_in dir=inout }
+B 5 147.5 87.5 152.5 92.5 {name=reset dir=inout }
+T {@symname} -90 -6 0 0 0.3 0.3 {}
+T {@name} 85 -112 0 0 0.2 0.2 {}
+T {vdd} 125 -94 0 1 0.2 0.2 {}
+T {vss} 125 -74 0 1 0.2 0.2 {}
+T {ref_out} 125 -54 0 1 0.2 0.2 {}
+T {ref_in} 125 -34 0 1 0.2 0.2 {}
+T {s_out} 125 -14 0 1 0.2 0.2 {}
+T {s_in} 125 6 0 1 0.2 0.2 {}
+T {load} 125 26 0 1 0.2 0.2 {}
+T {read} 125 46 0 1 0.2 0.2 {}
+T {clk_in} 125 66 0 1 0.2 0.2 {}
+T {reset} 125 86 0 1 0.2 0.2 {}
