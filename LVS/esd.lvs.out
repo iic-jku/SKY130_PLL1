@@ -1,0 +1,48 @@
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_EUY57X in circuit esd_diodes (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: esd_diodes                      |Circuit 2: esd_diodes                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pw2nd_05v5 (2)         |sky130_fd_pr__diode_pw2nd_05v5 (2)         
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: esd_diodes                      |Circuit 2: esd_diodes                      
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes esd_diodes and esd_diodes are equivalent.
+Flattening unmatched subcell r_250 in circuit esd (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_generic_po_PL36XQ in circuit esd (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: esd                             |Circuit 2: esd                             
+-------------------------------------------|-------------------------------------------
+esd_diodes (2)                             |esd_diodes (2)                             
+sky130_fd_pr__res_generic_po (1)           |sky130_fd_pr__res_generic_po (1)           
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: esd                             |Circuit 2: esd                             
+-------------------------------------------|-------------------------------------------
+in                                         |in                                         
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes esd and esd are equivalent.
+
+Final result: Circuits match uniquely.
+.
