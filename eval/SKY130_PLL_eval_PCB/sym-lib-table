@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Caravel_board")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/Caravel_board.kicad_sym")(options "")(descr ""))
+  (lib (name "TO_SENSO1")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/TO_SENSO1.kicad_sym")(options "")(descr ""))
+  (lib (name "ADM7154")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/ADM7154.kicad_sym")(options "")(descr ""))
+  (lib (name "SKY130_PLL_LOGO")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/SKY130_PLL_LOGO.kicad_sym")(options "")(descr ""))
+  (lib (name "ad8000ycpz")(type "KiCad")(uri "${KIPRJMOD}/libs/symbols/ad8000ycpz.kicad_sym")(options "")(descr ""))
+)

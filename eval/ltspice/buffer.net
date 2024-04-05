@@ -1,0 +1,25 @@
+* C:\Users\fath_local\Desktop\pico_contest\ltspice\buffer.asc
+V1 VDD 0 3.3
+V2 VIN 0 PULSE(0 1.8 0 10p 10p 5n 10n)
+C2 N005 0 1p
+R1 N005 0 50
+C1 N005 0 10p
+V3 0 VSS 3.3
+R2 N005 N006 50
+XU1 VIN N006 VDD VSS N006 AD8009an
+XU2 N001 N002 VDD VSS N003 VDD AD8000
+C3 N004 0 1p
+R3 N004 0 50
+C4 N004 0 10p
+R4 N004 N003 50
+R5 N001 VIN 50
+R6 N003 N002 432
+R7 0 N002 432
+C5 N003 0 1p
+C6 N002 0 1p
+C7 0 N001 1p
+.tran 0 50n 0 0.1n
+.lib C:\Users\fath_local\Desktop\pico_contest\ltspice\ad8000p.cir
+.lib C:\Users\fath_local\Desktop\pico_contest\ltspice\ad8009.cir
+.backanno
+.end

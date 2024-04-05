@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Caravel_Board")(type "KiCad")(uri "${KIPRJMOD}/libs/footprints/Caravel_Board.pretty")(options "")(descr ""))
+  (lib (name "TO_SENSO1")(type "KiCad")(uri "${KIPRJMOD}/libs/footprints/TO_SENSO1.pretty")(options "")(descr ""))
+  (lib (name "ADM7154")(type "KiCad")(uri "${KIPRJMOD}/libs/footprints/ADM7154.pretty")(options "")(descr ""))
+  (lib (name "SKY130_PLL_LOGO")(type "KiCad")(uri "${KIPRJMOD}/libs/footprints/SKY130_PLL_LOGO.pretty")(options "")(descr ""))
+  (lib (name "ad8000ycpz")(type "KiCad")(uri "${KIPRJMOD}/libs/footprints/ad8000ycpz.pretty")(options "")(descr ""))
+)
