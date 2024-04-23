@@ -1,0 +1,265 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 22 14:47:20 2024
+| Host         : pablo running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file artya7_35_spi2uart_control_sets_placed.rpt
+| Design       : artya7_35_spi2uart
+| Device       : xc7a35ti
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   187 |
+|    Minimum number of control sets                        |   187 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   864 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   187 |
+| >= 0 to < 4        |   101 |
+| >= 4 to < 6        |    14 |
+| >= 6 to < 8        |    11 |
+| >= 8 to < 10       |    28 |
+| >= 10 to < 12      |     8 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    22 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             283 |          122 |
+| No           | No                    | Yes                    |              24 |           10 |
+| No           | Yes                   | No                     |              79 |           36 |
+| Yes          | No                    | No                     |             971 |          301 |
+| Yes          | No                    | Yes                    |             223 |          126 |
+| Yes          | Yes                   | No                     |             100 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+---------------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                      Enable Signal                      |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+---------------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  eth_tx_clk_IBUF     |                                                         |                                        |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[64]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[47]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[65]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[42]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[36]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[39]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[68]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[69]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[35]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[38]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[45]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[61]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[34]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[66]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[67]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[23]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[26]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[4]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[24]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[48]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[16]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[59]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[53]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[5]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[17]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[44]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[37]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[19]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[60]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[62]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[58]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[22]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[21]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[20]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[55]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[27]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[28]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[29]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[30]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[25]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[86]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[84]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[85]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[88]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[70]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[6]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[77]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[89]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[72]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[78]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[91]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[80]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[92]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[8]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/load_s_i_1_n_0                      | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[81]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/read_s_i_1_n_0                      | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[75]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[82]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[93]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/s_in_s                              | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[90]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[9]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[71]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[74]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[87]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[73]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[83]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[79]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[0]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[11]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[10]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[12]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[13]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[14]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[15]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[7]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[76]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[31]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[40]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[18]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[41]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[46]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[32]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[49]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[50]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[1]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[33]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[2]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[3]_i_1_n_0  | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[51]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[52]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[94]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[54]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[56]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[43]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[57]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received_trigger_s[63]_i_1_n_0 | BTN_RST_IBUF                           |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/PIN1_o_i_1_n_0                             | BTN_RST_IBUF                           |                1 |              2 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/MII_RST_N                                      | ETH_inst/n662_i_1_n_0                  |                1 |              2 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | ETH_inst/n1381                         |                3 |              4 |         1.33 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n720[9]_i_1_n_0                                | ETH_inst/n720[10]_i_1_n_0              |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n726[3]_i_1_n_0                                |                                        |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n731[3]_i_1_n_0                                |                                        |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n891_i_1_n_0                                   |                                        |                2 |              4 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/FSM_sequential_n374[3]_i_1_n_0                 |                                        |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/II_MII_1/n909                                  |                                        |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n207_reg[1]__0_n_0                       |                                        |                1 |              4 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n721[7]_i_2_n_0                                | ETH_inst/n721[7]_i_1_n_0               |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/n732                                | ETH_inst/n732[10]_i_1_n_0              |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/II_MII_1/n761                                  |                                        |                1 |              5 |         5.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n207_reg[1]__0_n_0                       | ETH_inst/n728[6]_i_1_n_0               |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/FSM_sequential_s_state[4]_i_1_n_0          | BTN_RST_IBUF                           |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/II_MII_1/n910                                  |                                        |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n624[n1]_i_1_n_0                               |                                        |                1 |              6 |         6.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/reset_DUT_cnt0                             | UDP2SPI_inst/reset_DUT_cnt[15]_i_1_n_0 |                2 |              6 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n718[5]_i_1_n_0                                |                                        |                3 |              6 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n720[9]_i_1_n_0                                |                                        |                4 |              7 |         1.75 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | ETH_inst/n1383/clear                   |                2 |              7 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n728[6]_i_1_n_0                                |                                        |                3 |              7 |         2.33 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n732[10]_i_1_n_0                               |                                        |                3 |              7 |         2.33 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/n732                                |                                        |                2 |              7 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n127[n37][n34][7]_i_1_n_0                      |                                        |                3 |              7 |         2.33 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/bit_cnt                             | BTN_RST_IBUF                           |                2 |              7 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/FSM_onehot_master_state[6]_i_1_n_0  | BTN_RST_IBUF                           |                2 |              7 |         3.50 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[71]_i_1_n_0            | BTN_RST_IBUF                           |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | ETH_inst/n636[9]_i_1_n_0               |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[63]_i_1_n_0            | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[55]_i_1_n_0            | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | clk_1M_out_cnt_s0                      |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[79]_i_1_n_0            | BTN_RST_IBUF                           |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[7]_i_1_n_0             | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[39]_i_1_n_0            | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[87]_i_1_n_0            | BTN_RST_IBUF                           |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n733[7]_i_1__0_n_0                             |                                        |                4 |              8 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n465[7]_i_1_n_0                                |                                        |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[47]_i_1_n_0            | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[95]_i_1_n_0            | BTN_RST_IBUF                           |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n647[7]_i_1_n_0                                |                                        |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n655[n14][7]_i_1_n_0                           |                                        |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n715[7]_i_1_n_0                                |                                        |                4 |              8 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n715[7]_i_1_n_0                                | ETH_inst/n715[15]_i_1_n_0              |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[15]_i_1_n_0            | BTN_RST_IBUF                           |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/n713                                |                                        |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n711[7]_i_1_n_0                                |                                        |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/n788                                |                                        |                5 |              8 |         1.60 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n77[7]_i_1_n_0                                 |                                        |                2 |              8 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n794[7]_i_1_n_0                                |                                        |                5 |              8 |         1.60 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/clk_cnt[7]_i_1_n_0                  | BTN_RST_IBUF                           |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/UDP0_TxData0                               |                                        |                3 |              8 |         2.67 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[23]_i_1_n_0            | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/spi_data_to_write_o[31]_i_1_n_0            | BTN_RST_IBUF                           |                1 |              8 |         8.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n668                                     |                                        |                3 |              9 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | UDP2SPI_inst/reset_DUT_cnt0                             | UDP2SPI_inst/reset_DUT_cnt[13]_i_1_n_0 |                4 |             10 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/n777                                |                                        |                3 |             11 |         3.67 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/p_0_out[1]                          |                                        |                5 |             11 |         2.20 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n735[10]_i_2_n_0                               | ETH_inst/n735[10]_i_1_n_0              |                4 |             11 |         2.75 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n391[10]_i_1_n_0                               |                                        |                6 |             11 |         1.83 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n393[10]_i_2_n_0                               | ETH_inst/n389/n378/n393[10]_i_1_n_0    |                3 |             11 |         3.67 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n631[10]_i_1_n_0                               |                                        |                4 |             11 |         2.75 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n764[10]_i_1_n_0                               |                                        |                4 |             11 |         2.75 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n782[10]_i_1_n_0                               |                                        |                3 |             12 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/II_MII_1/n747                                  |                                        |                2 |             12 |         6.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | ETH_inst/n1383/n687/n753               |                5 |             13 |         2.60 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n656[n21][15]_i_1_n_0                          |                                        |                4 |             16 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | BTN_RST_IBUF                           |                8 |             16 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n687/n713                                | ETH_inst/n783[15]_i_1_n_0              |                5 |             16 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n183                                     |                                        |                7 |             16 |         2.29 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n756[15]_i_1_n_0                               |                                        |                5 |             16 |         3.20 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n713[39]_i_1_n_0                               | ETH_inst/n749[16]_i_1__0_n_0           |                4 |             17 |         4.25 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n732[10]_i_1__0_n_0                            |                                        |               10 |             20 |         2.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n632                                     |                                        |                5 |             20 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n392[8]_i_1_n_0                                |                                        |                5 |             20 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n560[23]_i_1_n_0                               |                                        |                9 |             30 |         3.33 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n655[n12][31]_i_1_n_0                          |                                        |                5 |             32 |         6.40 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/MII_RST_N                                      |                                        |               13 |             32 |         2.46 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n656[n19][15]_i_1_n_0                          |                                        |                8 |             32 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n746[31]_i_1__0_n_0                            |                                        |               24 |             32 |         1.33 |
+|  CLK100MHZ_IBUF_BUFG |                                                         | ETH_inst/n1354[n50]                    |               23 |             47 |         2.04 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n654[n5][47]_i_1_n_0                           |                                        |               14 |             48 |         3.43 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1383/n713                                     |                                        |               13 |             56 |         4.31 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n713[39]_i_1_n_0                               |                                        |               19 |             57 |         3.00 |
+|  CLK100MHZ_IBUF_BUFG | PLL_CONTROLLER_inst/data_received0                      |                                        |               18 |             95 |         5.28 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/hasBuffer.n246[15]_i_1_n_0                     |                                        |               21 |             96 |         4.57 |
+|  CLK100MHZ_IBUF_BUFG | ETH_inst/n1384/n248                                     |                                        |               24 |             96 |         4.00 |
+|  CLK100MHZ_IBUF_BUFG |                                                         |                                        |              121 |            282 |         2.33 |
++----------------------+---------------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+

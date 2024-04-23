@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1713789923">
+  <File Type="BITSTR-BMM" Name="artya7_35_spi2uart_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="artya7_35_spi2uart_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="artya7_35_spi2uart_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="artya7_35_spi2uart_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="artya7_35_spi2uart.tcl"/>
+  <File Type="OPT-TIMING" Name="artya7_35_spi2uart_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="artya7_35_spi2uart_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="artya7_35_spi2uart_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="artya7_35_spi2uart_reports.tcl"/>
+  <File Type="OPT-DRC" Name="artya7_35_spi2uart_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="artya7_35_spi2uart.hwdef"/>
+  <File Type="PWROPT-DCP" Name="artya7_35_spi2uart_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="artya7_35_spi2uart_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="artya7_35_spi2uart_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="artya7_35_spi2uart_placed.dcp"/>
+  <File Type="PLACE-IO" Name="artya7_35_spi2uart_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="artya7_35_spi2uart_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="artya7_35_spi2uart_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="artya7_35_spi2uart_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="artya7_35_spi2uart_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="artya7_35_spi2uart_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="artya7_35_spi2uart_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="artya7_35_spi2uart_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="artya7_35_spi2uart_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="artya7_35_spi2uart.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="artya7_35_spi2uart_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="artya7_35_spi2uart_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="artya7_35_spi2uart_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="artya7_35_spi2uart.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="artya7_35_spi2uart_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="artya7_35_spi2uart_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="artya7_35_spi2uart_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="artya7_35_spi2uart_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="artya7_35_spi2uart_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="artya7_35_spi2uart_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="artya7_35_spi2uart_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="artya7_35_spi2uart.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="artya7_35_spi2uart_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="artya7_35_spi2uart_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="artya7_35_spi2uart_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="artya7_35_spi2uart_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="artya7_35_spi2uart_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="artya7_35_spi2uart_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="artya7_35_spi2uart_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="artya7_35_spi2uart_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="artya7_35_spi2uart_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="artya7_35_spi2uart_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="artya7_35_spi2uart_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="artya7_35_spi2uart_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="artya7_35_spi2uart_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="artya7_35_spi2uart_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="artya7_35_spi2uart_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="artya7_35_spi2uart_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="artya7_35_spi2uart_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="artya7_35_spi2uart_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="artya7_35_spi2uart_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="artya7_35_spi2uart_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="artya7_35_spi2uart_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="artya7_35_spi2uart.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="artya7_35_spi2uart_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="artya7_35_spi2uart.rbt"/>
+  <File Type="BITSTR-NKY" Name="artya7_35_spi2uart.nky"/>
+  <File Type="PDI-FILE" Name="artya7_35_spi2uart.pdi"/>
+  <File Type="RCFI_FILE" Name="artya7_35_spi2uart.rcfi"/>
+  <File Type="CFI_FILE" Name="artya7_35_spi2uart.cfi"/>
+  <File Type="RNPI_FILE" Name="artya7_35_spi2uart.rnpi"/>
+  <File Type="NPI_FILE" Name="artya7_35_spi2uart.npi"/>
+  <File Type="RBD_FILE" Name="artya7_35_spi2uart.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="artya7_35_spi2uart.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="artya7_35_spi2uart.sysdef"/>
+  <File Type="BG-BGN" Name="artya7_35_spi2uart.bgn"/>
+  <File Type="BG-DRC" Name="artya7_35_spi2uart.drc"/>
+  <File Type="RDI-RDI" Name="artya7_35_spi2uart.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/ip/eth/FC1001_MII.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Vorlage_Patrick/s1_SPI/Vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/ip/eth/FC1001_MII.edn"/>
+        <Attr Name="ImportTime" Val="1613464810"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/artya7_35_spi2uart_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Vorlage_Patrick/s1_SPI/Vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/artya7_35_spi2uart_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1637747620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/pll_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/pll_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1712919383"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/udp2spi_unit_ea.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Vorlage_Patrick/s1_SPI/Vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/udp2spi_unit_ea.vhd"/>
+        <Attr Name="ImportTime" Val="1614173812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/artya7_35_spi2uart.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Vorlage_Patrick/s1_SPI/Vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/artya7_35_spi2uart.vhd"/>
+        <Attr Name="ImportTime" Val="1637764220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="artya7_35_spi2uart"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/Arty-A7-35-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Vorlage_Patrick/s1_SPI/Vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/constrs_1/Arty-A7-35-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1617290966"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/Arty-A7-35-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

@@ -1197,7 +1197,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "10n"
 			(at 66.04 96.52 90)
 			(effects
 				(font

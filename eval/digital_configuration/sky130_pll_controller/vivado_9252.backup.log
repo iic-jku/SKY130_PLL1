@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 16 09:36:41 2024
+# Process ID: 9252
+# Current directory: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8212 C:\Users\fath_local\Desktop\pico_contest\SKY130_PLL1\eval\digital_configuration\sky130_pll_controller\s1_SPI_Master.xpr
+# Log file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/vivado.log
+# Journal file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller'
+INFO: [Project 1-313] Project file moved from 'C:/Users/fath_local/Desktop/evaluation_SENSO1/SPI/s1_SPI_Master' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 999.238 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 16 09:44:51 2024...

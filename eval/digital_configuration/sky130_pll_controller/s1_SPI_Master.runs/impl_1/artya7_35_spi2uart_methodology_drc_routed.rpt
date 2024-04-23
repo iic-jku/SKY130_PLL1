@@ -1,0 +1,191 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 22 14:47:55 2024
+| Host         : pablo running 64-bit major release  (build 9200)
+| Command      : report_methodology -file artya7_35_spi2uart_methodology_drc_routed.rpt -pb artya7_35_spi2uart_methodology_drc_routed.pb -rpx artya7_35_spi2uart_methodology_drc_routed.rpx
+| Design       : artya7_35_spi2uart
+| Device       : xc7a35ticsg324-1L
+| Speed File   : -1L
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 30
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 7          |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                                    | 21         |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/II_MII_1/FD_TXD0/FD0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/II_MII_1/FD_TXD1/FD0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/II_MII_1/FD_TXD2/FD0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/II_MII_1/FD_TXD3/FD0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/II_MII_1/FD_TXEN/FD0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/II_MII_1/n898_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin ETH_inst/n1382/n561/CLK is not reached by a timing clock
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net eth_tx_clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): ETH_inst/MII_TX_CLK, eth_tx_clk_IBUF_inst/O
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell clk_1M_out_cnt_s[6]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) clk_1M_out_cnt_s_reg[0]/CLR, clk_1M_out_cnt_s_reg[1]/CLR,
+clk_1M_out_cnt_s_reg[2]/CLR, clk_1M_out_cnt_s_reg[3]/CLR,
+clk_1M_out_cnt_s_reg[4]/CLR, clk_1M_out_cnt_s_reg[5]/CLR,
+clk_1M_out_cnt_s_reg[6]/CLR, clk_1M_out_s_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on BTN_RST relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on PIN3_i relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on SOUT relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on SW_1MCLK_EN relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_clk relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on eth_rx_dv relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[0] relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[1] relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[2] relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on eth_rxd[3] relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on CLK_1M_OUT relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on LOAD relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on PIN1_o relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on PIN2_o relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on READ relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on REG_CLK relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on SIN relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on eth_ref_clk relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on eth_rstn relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on reset_to_chip relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on reset_to_chip_mgmt relative to clock(s) CLK100MHZ
+Related violations: <none>
+
+

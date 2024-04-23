@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 16 10:51:39 2024
+# Process ID: 8020
+# Current directory: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2544 C:\Users\fath_local\Desktop\pico_contest\SKY130_PLL1\eval\digital_configuration\sky130_pll_controller\s1_SPI_Master.xpr
+# Log file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/vivado.log
+# Journal file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller'
+INFO: [Project 1-313] Project file moved from 'C:/Users/fath_local/Desktop/evaluation_SENSO1/SPI/s1_SPI_Master' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1186.566 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/s1_ic_bus_master.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/s1_ic_bus_master.vhd
+file delete -force C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/s1_ic_bus_master.vhd
+import_files -norecurse C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/pll_controller.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:11:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:11:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:13:14 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:13:15 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:14:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:14:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:14:44 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:14:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:15:39 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:15:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:16:29 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:16:29 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:20:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:20:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_unit_ea.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_unit_ea.vhd
+file delete -force C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_unit_ea.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:21:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:21:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:22:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:22:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:32:07 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:32:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:35:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:35:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:39:01 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 14:41:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 14:41:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:00:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 15:00:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:03:34 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 15:03:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:08:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 15:08:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_target all [get_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+export_ip_user_files -of_objects  [get_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -sync -no_script -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP clk_wiz_0, cache-ID = 5e6bcb204f3cd789; cache size = 0.498 MB.
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:11:59 2024] Launched synth_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/runme.log
+[Tue Apr 16 15:11:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:21:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:24:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:25:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date
+[Tue Apr 16 15:28:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1338.504 ; gain = 12.977
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319AE1915A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2892.211 ; gain = 1553.707
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/artya7_35_spi2uart.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:00:53 . Memory (MB): peak = 2936.371 ; gain = 0.000
+endgroup
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.FILES [list "C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/impl_1/artya7_35_spi2uart.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a35t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:00 ; elapsed = 00:00:52 . Memory (MB): peak = 2961.289 ; gain = 0.000
+endgroup
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319AE1915A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319AE1915A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+export_ip_user_files -of_objects  [get_files C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart2spi_unit_ea.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart2spi_unit_ea.vhd
+file delete -force C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart2spi_unit_ea.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_tx_ea.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_tx_ea.vhd
+file delete -force C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_tx_ea.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_rx_ea.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_rx_ea.vhd
+file delete -force C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/uart_rx_ea.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/synchronizer_ea.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/synchronizer_ea.vhd
+file delete -force C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.srcs/sources_1/imports/ARTY_A7_SPI_MASTER.srcs/synchronizer_ea.vhd
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 17 11:50:17 2024...

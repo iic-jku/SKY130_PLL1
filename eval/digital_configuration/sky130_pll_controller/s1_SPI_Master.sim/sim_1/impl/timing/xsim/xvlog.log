@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.sim/sim_1/impl/timing/xsim/testbench_uart2spi_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC1001_MII
+INFO: [VRFC 10-311] analyzing module artya7_35_spi2uart
+INFO: [VRFC 10-311] analyzing module ic_bus_master
+INFO: [VRFC 10-311] analyzing module syncronizer
+INFO: [VRFC 10-311] analyzing module uart2spi_unit
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-311] analyzing module uart_unit
+INFO: [VRFC 10-311] analyzing module udp2spi_unit
+INFO: [VRFC 10-311] analyzing module glbl

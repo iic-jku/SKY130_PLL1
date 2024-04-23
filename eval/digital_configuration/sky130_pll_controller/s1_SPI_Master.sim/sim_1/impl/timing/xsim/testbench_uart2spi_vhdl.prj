@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../ARTY_A7_SPI_MASTER.srcs/artya7_35_spi2uart_pkg.vhd" \
+"../../../../../ARTY_A7_SPI_MASTER.srcs/ic_bus_slave.vhd" \
+"../../../../../ARTY_A7_SPI_MASTER.srcs/sim_1/testbench_uart2spi.vhd" \
+
+# Do not sort compile order
+nosort

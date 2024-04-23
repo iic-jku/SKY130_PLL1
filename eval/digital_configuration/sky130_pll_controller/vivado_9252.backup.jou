@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 16 09:36:41 2024
+# Process ID: 9252
+# Current directory: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8212 C:\Users\fath_local\Desktop\pico_contest\SKY130_PLL1\eval\digital_configuration\sky130_pll_controller\s1_SPI_Master.xpr
+# Log file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/vivado.log
+# Journal file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.xpr
+update_compile_order -fileset sources_1

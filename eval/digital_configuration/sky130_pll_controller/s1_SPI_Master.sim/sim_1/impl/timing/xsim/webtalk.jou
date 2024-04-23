@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul 30 14:38:41 2021
+# Process ID: 8700
+# Current directory: T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_uart2spi_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.sim/sim_1/impl/timing/xsim/xsim.dir/testbench_uart2spi_time_impl/webtalk/xsim_webtalk.tcl -notrace

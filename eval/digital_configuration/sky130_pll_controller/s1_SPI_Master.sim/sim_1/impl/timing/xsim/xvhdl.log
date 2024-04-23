@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/artya7_35_spi2uart_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/ic_bus_slave.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ic_bus_slave'
+INFO: [VRFC 10-163] Analyzing VHDL file "T:/SVN/tapeout/2020_11_TSMC_28/SPI/FPGA/vivado/ARTY_A7_SPI_MASTER/ARTY_A7_SPI_MASTER.srcs/sim_1/testbench_uart2spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench_uart2spi'

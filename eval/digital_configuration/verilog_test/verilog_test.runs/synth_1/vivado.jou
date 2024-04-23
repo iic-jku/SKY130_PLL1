@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 18 17:26:27 2024
+# Process ID: 14364
+# Current directory: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/verilog_test/verilog_test.runs/synth_1
+# Command line: vivado.exe -log test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test.tcl
+# Log file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/verilog_test/verilog_test.runs/synth_1/test.vds
+# Journal file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/verilog_test/verilog_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test.tcl -notrace

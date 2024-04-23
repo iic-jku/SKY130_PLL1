@@ -1,0 +1,68 @@
+C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/wrapper.v {1 {vlog -work work -stats=none {C:\Users\fath_local\Desktop\pico_contest\SKY130_PLL1\eval\digital_configuration\src\wrapper.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module wrapper
+
+Top level modules:
+	wrapper
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_counter.v {1 {vlog -work work -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fll_counter
+
+Top level modules:
+	fll_counter
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/wrapper_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/wrapper_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity wrapper_tb
+-- Compiling architecture wrapper_tb_bhv of wrapper_tb
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v {1 {vlog -work work -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/pll_controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/pll_controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pll_controller
+-- Compiling architecture pll_controller_bhv of pll_controller
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_wrapper_2.v {1 {vlog -work work -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_wrapper_2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fll_wrapper_2
+
+Top level modules:
+	fll_wrapper_2
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/shiftregister.v {1 {vlog -work work -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/shiftregister.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shiftregister
+
+Top level modules:
+	shiftregister
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_2.v {1 {vlog -work work -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fll_2
+
+Top level modules:
+	fll_2
+
+} {} {}} C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/bufferreg.v {1 {vlog -work work -stats=none C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/bufferreg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bufferreg
+
+Top level modules:
+	bufferreg
+
+} {} {}}

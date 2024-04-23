@@ -1,0 +1,242 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 19 15:36:18 2024
+# Process ID: 12824
+# Current directory: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.runs/synth_1
+# Command line: vivado.exe -log wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
+# Log file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.runs/synth_1/wrapper.vds
+# Journal file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source wrapper.tcl -notrace
+Command: synth_design -top wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18436
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/wrapper.v:1]
+	Parameter N bound to: 96 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'shiftregister' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/shiftregister.v:1]
+	Parameter N bound to: 96 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftregister' (1#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/shiftregister.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fll_wrapper_2' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_wrapper_2.v:1]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fll_2' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_2.v:1]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fll_counter' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_counter.v:1]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fll_counter' (2#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fll_2' (3#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v:1]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux' (4#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bufferreg' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/bufferreg.v:1]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bufferreg' (5#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/bufferreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fll_wrapper_2' (6#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/fll_wrapper_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized0' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v:1]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized0' (6#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized1' [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v:1]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized1' (6#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper' (7#1) [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/src/wrapper.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1009.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.srcs/constrs_1/imports/Arty_XDC/Arty-A7-35-Master.xdc]
+Finished Parsing XDC File [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.srcs/constrs_1/imports/Arty_XDC/Arty-A7-35-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.srcs/constrs_1/imports/Arty_XDC/Arty-A7-35-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1009.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 3     
++---Registers : 
+	               96 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT3 |    96|
+|4     |FDCE |   192|
+|5     |IBUF |     5|
+|6     |OBUF |     3|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1009.766 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1009.766 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1009.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1014.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1014.133 ; gain = 4.367
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_peripheral/sky130_pll_peripheral.runs/synth_1/wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_utilization_synth.rpt -pb wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 15:36:53 2024...

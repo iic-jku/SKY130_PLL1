@@ -1,0 +1,62 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: T:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b4373147cd5d43658a0d94bd685514ae --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot testbench_uart2spi_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.testbench_uart2spi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-4969] module 'IBUF' is instantiated multiple times from VHDL or from both Verilog and VHDL, elaboration result may be incorrect [/wrk/ci/prod/2020.2/rdi_builds/continuous/2020_11_18_3064766/data/verilog/src/unisims/IBUF.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "testbench_uart2spi_time_impl.sdf", for root module "testbench_uart2spi/artya7_35_spi2uart_inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "testbench_uart2spi_time_impl.sdf", for root module "testbench_uart2spi/artya7_35_spi2uart_inst".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.artya7_35_spi2uart_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.ZHOLD_DELAY(ZHOLD_FABRIC="0")
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.DNA_PORT(SIM_DNA_VALUE=57'b01000...
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module simprims_ver.RAMB36E1(READ_WIDTH_A=9,READ_WID...
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module simprims_ver.RAMB18E1(READ_WIDTH_A=9,READ_WID...
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module simprims_ver.RAMB18E1(INITP_00=256'b011111100...
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
+Compiling module simprims_ver.RAMB18E1(READ_WIDTH_A=9,READ_WID...
+Compiling module xil_defaultlib.FC1001_MII
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.ic_bus_master
+Compiling module xil_defaultlib.uart2spi_unit
+Compiling module simprims_ver.FDPE(XON="FALSE")
+Compiling module xil_defaultlib.syncronizer
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.uart_unit
+Compiling module xil_defaultlib.udp2spi_unit
+Compiling module simprims_ver.OBUFT
+Compiling module simprims_ver.BUFG
+Compiling module xil_defaultlib.artya7_35_spi2uart
+Compiling architecture ic_bus_slave_bhv of entity xil_defaultlib.ic_bus_slave [ic_bus_slave_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_uart2spi
+Built simulation snapshot testbench_uart2spi_time_impl

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 22 14:45:26 2024
+# Process ID: 17608
+# Current directory: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1
+# Command line: vivado.exe -log artya7_35_spi2uart.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source artya7_35_spi2uart.tcl
+# Log file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1/artya7_35_spi2uart.vds
+# Journal file: C:/Users/fath_local/Desktop/pico_contest/SKY130_PLL1/eval/digital_configuration/sky130_pll_controller/s1_SPI_Master.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source artya7_35_spi2uart.tcl -notrace
